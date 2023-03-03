@@ -1,0 +1,70 @@
+main
+  section.bads
+    .container
+      .breadcrumbs
+        ul(itemscope itemtype="http://schema.org/BreadcrumbList").breadcrumbs__links
+          li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem") 
+            a(itemprop="item" href="index.html")
+              span(itemprop="name") Главная
+            meta(itemprop="position" content="1")
+          li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+            a(itemprop="item")
+              span(itemprop="name") Биологически активные добавки
+            meta(itemprop="position" content="2")
+      h1 Каталог бадов
+      .bads__inner 
+        nav.bads__menu
+          button.btn.bads__menu-title Каталог
+            span
+          ul.bads__menu-list 
+            li.bads__menu-item
+              a(href="#!").bads__menu-link Все препараты
+            li.bads__menu-item
+              a(href="#!").bads__menu-link Безрецептурные препараты
+            li.bads__menu-item
+              a(href="#!").bads__menu-link Рецептурные препараты
+            li.bads__menu-item
+              a(href="#!").bads__menu-link Нестероидные противовоспалительные средства
+            li.bads__menu-item
+              a(href="#!").bads__menu-link При заболеваниях мочеполовой системы
+        .bads__products 
+          //- ul.bads__tags-list
+          //-   li.bads__tags-item
+          //-     a(href="#!") все категории
+          //-   li.bads__tags-item
+          //-     a(href="#!") по алфавиту
+          //-   li.bads__tags-item
+          //-     a(href="#!") М
+          .bads__products-alphabet
+            a(href="#!") А
+            a(href="#!") Б
+            a(href="#!") В
+            a(href="#!") Г
+            a(href="#!") Д
+            a(href="#!") Е
+            a(href="#!") Ж
+            a(href="#!") З
+            a(href="#!") И
+            a(href="#!") К
+            a(href="#!") Л
+            a(href="#!") М
+            a(href="#!") Н
+            a(href="#!") О
+            a(href="#!") П
+            a(href="#!") Р
+            a(href="#!") С
+            a(href="#!") Т
+            a(href="#!") У
+            a(href="#!") Ф
+            a(href="#!") Х
+            a(href="#!") Ц
+            a(href="#!") Ч
+            a(href="#!") Ш
+            a(href="#!") Щ
+            a(href="#!") Э
+            a(href="#!") Ю
+            a(href="#!") Я
+          .bads__products-cards
+            - for (var i = 0; i < 6; i++)
+              include ../../bem-blocks/product-card/product-card.pug
+          include ../../bem-blocks/pagination/pagination.pug  

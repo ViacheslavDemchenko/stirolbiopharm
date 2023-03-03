@@ -1,0 +1,35 @@
+section {
+  padding: 3.5rem 0 1.75rem 0;
+
+  @media (min-width: 1440px) {
+    padding: 3.5rem 0;
+  }
+}
+
+.section {
+  position: relative;
+
+  &--honeycombs-right {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 9rem;
+      right: 2rem;
+      width: 80rem;
+      height: 125rem;
+      background: url("../img/honeycombs-right.png") center center / cover no-repeat;
+    }
+  }
+
+  &--honeycombs-left {
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -88rem;
+      left: -9rem;
+      width: 80rem;
+      height: 115rem;
+      background: url("../img/honeycombs-left.png") center center / cover no-repeat;
+    }
+  }
+}

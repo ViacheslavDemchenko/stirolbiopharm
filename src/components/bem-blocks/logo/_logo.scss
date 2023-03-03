@@ -1,0 +1,19 @@
+.logo {
+  width: 12rem;
+  height: 4.586rem;
+
+  @media (min-width: 768px) {
+    width: 19.6rem;
+    height: 7.2rem;
+  }
+
+  // @media (min-width: 1200px) {
+  //   width: 19.6rem;
+  //   height: 7.2rem;
+  // }
+
+  @media (min-width: 1440px) {
+    width: 24.6rem;
+    height: 9.2rem;
+  }
+}

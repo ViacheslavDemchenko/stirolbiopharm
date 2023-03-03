@@ -1,0 +1,207 @@
+.products {
+  // position: relative;
+  // padding: 3.5rem 0;
+
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   bottom: -88rem;
+  //   left: -9rem;
+  //   width: 80rem;
+  //   height: 115rem;
+  //   background: url("../img/honeycombs-left.png") center center / cover no-repeat;
+  // }
+
+  &__items {
+    width: 100%;
+    max-width: 123.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 700px) {
+      width: 80%;
+      margin: 0 auto;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    position: relative;
+    min-height: 504px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -10rem;
+      left: 50%;
+      transform: translate(-50%);
+      width: 52rem;
+      height: 50rem;
+      background: url("../img/icons/blue-gradient.svg") center center/ cover no-repeat;  
+
+      @media (min-width: 1024px) {
+        width: 64rem;
+        height: 62rem;
+        background: url("../img/icons/blue-gradient.svg") center center/ 64rem 62rem no-repeat;  
+      }
+    }
+
+    &:nth-of-type(1) .products__item-icon {
+      background: url("../img/icons/plus-green.svg") center center / cover no-repeat;
+
+      &:hover,
+      &:focus {
+        background: url("../img/icons/plus-white.svg") center center / cover no-repeat;
+      }
+    }
+
+    &:nth-of-type(2) .products__item-icon {
+      background: url("../img/icons/leaf-green.svg") center center / cover no-repeat;
+
+      &:hover,
+      &:focus {
+        background: url("../img/icons/leaf-white.svg") center center / cover no-repeat;
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 5rem;
+
+      @media (min-width: 700px) {
+        margin-bottom: 0;
+      }
+    }
+
+    &-img {
+      transform: translateY(13rem);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 22.6rem;
+        height: 16.1rem;
+
+        @media (min-width: 1024px) {
+          width: 27.6rem;
+          height: 21.1rem;
+        }
+      }
+    }
+
+    &-title {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 13rem);
+      width: 29rem;
+      padding: 5.2rem 1rem 2.2rem 1rem;
+      background: var(--white-primary);
+      box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgba($black-primary, 0.04);
+      border-radius: 1rem;
+
+      @media (min-width: 1024px) {
+        width: 43.8rem;
+        padding: 8.2rem 1rem 3.2rem 1rem;
+      }
+
+      h3 {
+        max-width: 25rem;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        text-transform: uppercase;
+        color: var(--black-secondary);
+
+        @media (min-width: 1024px) {
+          max-width: 28rem;
+          font-size: 2rem;
+        }
+
+        @media (min-width: 1440px) {
+          font-size: 2.4rem;
+        }
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      z-index: 1000;
+      bottom: 16.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 10rem;
+      height: 10rem;
+      border: 0.3rem solid var(--green-primary);
+      border-radius: 50%;
+      will-change: background;
+      transition: background 0.3s ease-in-out;
+
+      @media (min-width: 1024px) {
+        bottom: 10rem;
+        width: 12.9rem;
+        height: 12.9rem;
+      }
+    }
+  }
+
+  .products__item {
+
+    &:nth-of-type(1) {
+      .products__item-pill {
+        position: absolute;
+  
+        &:nth-of-type(1) {
+          width: 8.1rem;
+          height: 5.4rem;
+          right: 9rem;
+          top: 5rem;
+          transform: rotate(183deg);
+        }
+  
+        &:nth-of-type(2) {
+          width: 7.6rem;
+          height: 7.1rem;
+          right: 16rem;
+          top: -6rem;
+        }
+  
+        &:nth-of-type(3) {
+          width: 5rem;
+          height: 5.1rem;
+          right: 4rem;
+          top: -5rem;
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      .products__item-pill {
+        position: absolute;
+        width: 3.6rem;
+        height: 8.7rem;
+  
+        &:nth-of-type(1) {
+          right: 19rem;
+          top: -1rem;    
+          transform: rotate(155deg);
+        }
+  
+        &:nth-of-type(2) {
+          right: 6rem;
+          top: 3rem;
+        }
+  
+        &:nth-of-type(3) {
+          right: 10rem;
+          top: -8rem;
+          transform: rotate(30deg);
+        }
+      }
+    }
+  }
+}

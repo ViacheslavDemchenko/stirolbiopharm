@@ -1,0 +1,173 @@
+.about {
+  position: relative;
+  padding: 3.5rem 0 7rem 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -47rem;
+    right: 0rem;
+    width: 67rem;
+    height: 100rem;
+    background: url("../img/molecule-1.png") center center / cover no-repeat;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 200;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__images {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    max-width: 61.2rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+
+    @media (min-width: 1024px) {
+      width: 40%;
+      max-width: 61.2rem;
+      margin: 0 2rem 0 7rem;
+    }
+
+    img {
+      border-radius: 1rem;
+
+      &:nth-of-type(1) {
+        width: 61.2rem;
+        height: 25rem;
+
+        @media (min-width: 1024px) {
+          height: 45.2rem;
+        }
+
+        @media (min-width: 1440px) {
+          height: 55.6rem;
+        }
+      }
+
+      &:nth-of-type(2) {
+        position: absolute;
+        bottom: -3rem;
+        left: -1rem;
+        width: 56.9rem;
+        height: 25rem;
+
+        @media (min-width: 700px) {
+          left: -3rem;
+        }
+
+        @media (min-width: 1024px) {
+          height: 45.2rem;
+        }
+
+        @media (min-width: 1440px) {
+          left: -4rem;
+          width: 56.9rem;
+          height: 53.2rem;
+        }
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 1000;
+    max-width: 76.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 2rem;
+    margin-top: 3rem;
+    background: var(--white-primary);
+    border: 0.3rem solid var(--green-secondary);
+    border-radius: 1rem;
+
+    @media (min-width: 1024px) {
+      // width: 60%;
+      max-width: 76.9rem;
+      margin-top: 0;
+      padding: 2.5rem 3.5rem;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 2.5rem 4.5rem;
+    }
+
+    @media (min-width: 1440px) {
+      max-width: 76.9rem;
+      padding: 3.5rem 6.5rem;
+    }
+
+    &-content {
+      margin-bottom: 2.2rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.8rem;
+      color: var(--black-secondary);
+
+      @media (min-width: 1024px) {
+        font-size: 1.8rem;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 2rem;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 2.4rem;
+      }
+    }
+
+    &-btn {
+      display: block;
+      padding: 1rem 2rem;
+      margin-top: 2.8rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 2rem;
+      color: var(--white-primary);
+      border: 0.3rem solid #4FD066;
+      border-radius: 5rem;
+      background: var(--green-secondary);
+      // will-change: background, color;
+      // transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+
+      @media (min-width: 1024px) {
+        padding: 1.5rem 2.5rem;
+      }
+
+      @media (min-width: 1440px) {
+        padding: 2rem 4rem;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+      }
+
+      // &:hover,
+      // &:focus {
+      //   color: var(--green-primary);
+      //   background: var(--white-secondary);
+      // }
+    }
+
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media (min-width: 1024px) {
+        align-items: flex-start;
+      }
+    }
+  }
+}

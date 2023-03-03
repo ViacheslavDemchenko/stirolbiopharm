@@ -1,0 +1,19 @@
+nav(itemscope itemtype="https://schema.org/SiteNavigationElement").nav
+  ul(role="menu").nav__list
+    li(itemprop="name" role="menuitem").nav__item
+      a(itemprop="url" href="index.html") Главная
+    li(itemprop="name" role="menuitem").nav__item
+      a(itemprop="url" href="production-main.html") Производство
+    li(itemprop="name" role="menuitem").nav__item.nav__item-submenu
+       a(href="#!") Продукция
+       ul.submenu
+        li(itemprop="name").submenu__item 
+          a(itemprop="url" href="medicine.html") Лекарственные препараты
+        li(itemprop="name").submenu__item
+          a(itemprop="url" href="bads.html") БАДы
+    li(itemprop="name" role="menuitem").nav__item
+      a(itemprop="url" href="#!") О нас
+    li(itemprop="name" role="menuitem").nav__item
+      a(itemprop="url" href="contacts.html") Контакты
+  include ../../bem-blocks/socials-mobile/socials-mobile.pug
+  include ../../bem-blocks/phone-mobile/phone-mobile.pug

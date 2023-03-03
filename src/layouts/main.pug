@@ -1,0 +1,10 @@
+block variables
+
+doctype html
+html(lang="ru")
+  head(itemscope itemtype="http://schema.org/WPHeader")
+    title(itemprop="headline")= pageTitle
+    include ./head.pug
+  body(itemscope itemtype="https://schema.org/WebPage")
+    block content
+    include ./footer.pug

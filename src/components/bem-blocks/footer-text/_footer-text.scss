@@ -1,0 +1,33 @@
+.footer__text {
+  max-width: 23rem;
+  text-align: center;
+  margin: 0 auto;
+  grid-column: 1;
+  grid-row: 4;
+
+  @media (min-width: 600px) {
+    grid-row: 2;
+  }
+
+  @media (min-width: 900px) {
+    grid-column: span 3;
+  }
+
+  @media (min-width: 1200px) {
+    text-align: left;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 30rem;
+    margin: 0;
+    // text-align: left;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--green-primary);
+  }
+}

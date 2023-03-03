@@ -1,0 +1,26 @@
+.btn {
+  outline: none;
+  border: none;
+
+  &--animate,
+  &--animate-reverse {
+    will-change: background, color;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  &--animate {
+    &:hover,
+    &:focus {
+      color: var(--white-primary);
+      background: var(--green-secondary);
+    }
+  }
+
+  &--animate-reverse {
+    &:hover,
+    &:focus {
+      color: var(--green-primary);
+      background: var(--white-secondary);
+    }
+  }
+}

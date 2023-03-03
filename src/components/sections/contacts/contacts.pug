@@ -1,0 +1,18 @@
+section.contacts
+  .container 
+    h2 Контакты
+    .contacts__map
+      #map(itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates")
+      meta(itemprop="latitude" content="48.299")
+      meta(itemprop="longitude" content="38.115")
+      div(itemscope itemtype="http://schema.org/Organization").contacts__block
+        ul(itemprop="address" itemscope itemtype="https://schema.org/PostalAddress")
+          li 
+            span(itemprop="addressRegion") ДНР, 
+            span(itemprop="addressLocality") г. Горловка, 
+            span(itemprop="streetAddress") ул. Горловской дивизии, 97 
+          li 
+            a(itemprop="email" href="mailto:stirolbiopharm@mail.ru") stirolbiopharm@mail.ru
+          li(itemscope itemtype="http://schema.org/LocalBusiness") 
+            a(itemprop="telephone" href="tel=88000000000") 8 (800) 000-00-00 
+            span(itemprop="openingHours" datetime="Mo-Fr, 9:00−20:00") (с 9:00 до 20:00)

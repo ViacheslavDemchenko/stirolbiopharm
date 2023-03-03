@@ -1,0 +1,64 @@
+// Переменные
+@import "./../scss/global/_variables";
+
+// Миксины
+@import "./../scss/global/_mixins";
+
+// Сброс дефолтных стилей браузера (дополнительный)
+@import "./../scss/global/_global";
+
+// Основные стили
+@import "./../scss/global/_base";
+
+// Размеры шрифтов повторяющихся элементов (h1, заголовки секций и т.д.)
+@import "./../scss/global/_typography";
+
+// Общие стили для кнопок
+@import "./../scss/global/_btns";
+
+// Общие стили для инпутов, чекбоксов и т.д.
+@import "./../scss/global/_inputs";
+
+// Общие стили для секций (паддинги и т.д.)
+@import "./../scss/global/_sections";
+
+// Плагины
+@import "./../scss/libs/swiper-bundle.min"; // Слайдер
+
+// Хедер
+@import "./../components/sections/header/_header";
+
+// Футер
+@import "./../components/sections/footer/_footer";
+
+// БЭМ-блоки
+// @import "./../components/bem-blocks/accordion/accordion"; // Аккордион
+@import "./../components/bem-blocks/burger/burger"; // Бургер
+@import "./../components/bem-blocks/logo/_logo"; // Логотип
+@import "./../components/bem-blocks/socials/_socials"; // Соцсети (общие стили)
+@import "./../components/bem-blocks/socials-mobile/_socials-mobile"; // Соцсети для мобилок
+@import "./../components/bem-blocks/socials-desktop/_socials-desktop"; // Соцсети для десктопа
+@import "./../components/bem-blocks/phone/_phone"; // Блок телефона (общие стили)
+@import "./../components/bem-blocks/phone-mobile/_phone-mobile";  // Блок телефона на мобилках
+@import "./../components/bem-blocks/phone-desktop/_phone-desktop"; // Блок телефона для десктопа
+@import "./../components/bem-blocks/nav/_nav"; // Меню
+@import "./../components/bem-blocks/search/_search"; // Строка поиска
+@import "./../components/bem-blocks/footer-text/_footer-text"; // Текст в футере
+@import "./../components/bem-blocks/product-card/_product-card"; // Карточка товара
+@import "./../components/bem-blocks/card-detailed/_card-detailed"; // Подробная карточка товара
+@import "./../components/bem-blocks/pagination/_pagination"; // Пагинация
+@import "./../components/bem-blocks/breadcrumbs/_breadcrumbs"; // Хлебные крошки
+// @import "./../components/bem-blocks/modal/modal"; // Модалки
+
+// Секции
+@import "./../components/sections/intro/_intro"; // Первая секция главной страницы
+@import "./../components/sections/production/_production"; // Секция Производство главной страницы
+@import "./../components/sections/products/_products"; // Секция Продукция главной страницы
+@import "./../components/sections/about/_about"; // Секция О нас главной страницы
+@import "./../components/sections/achievements/_achievements"; // Секция Наши достижения главной страницы
+@import "./../components/sections/contacts/_contacts"; // Секция Контакты главной страницы
+@import "./../components/sections/medicine/_medicine"; // Секция Каталога лекарственных препаратов страницы каталога
+@import "./../components/sections/bads/_bads"; // Секция Каталога бадов страницы каталога
+@import "./../components/sections/contacts-info/_contacts-info"; // Секция контакты на странице контакты
+@import "./../components/sections/production-main/_production-main"; // Первая секция страницы Производство
+@import "./../components/sections/production-direction/_production-direction"; // Вторая секция страницы Производство

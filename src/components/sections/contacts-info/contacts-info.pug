@@ -1,0 +1,36 @@
+main
+  section.section.section--honeycombs-right.section--honeycombs-left.contacts-info
+    .container
+      .breadcrumbs
+        ul(itemscope itemtype="http://schema.org/BreadcrumbList").breadcrumbs__links
+          li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem") 
+            a(itemprop="item" href="index.html")
+              span(itemprop="name") Главная
+            meta(itemprop="position" content="1")
+          li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+            a(itemprop="item")
+              span(itemprop="name") Контакты
+            meta(itemprop="position" content="2")
+      h1 Контакты
+      div(itemscope itemtype="http://schema.org/Organization").contacts-info__inner
+        .contacts-info__block
+          h3 Режим работы
+          ul.contacts-info__list
+            li(itemprop="openingHours" datetime="Mo-Fr, 9:00−20:00").contacts-info__item ПН-ПТ - с 9:00 до 20:00
+            li.contacts-info__item СБ-ВС - не рабочие дни
+        .contacts-info__block
+          h3 Должностные лица
+          ul.contacts-info__list
+            li(itemscope itemtype="http://schema.org/Person").contacts-info__item
+              span(itemprop="seller") Коммерческий директор 
+                span Кропива Андрей Григорьевич
+        .contacts-info__block
+          h3 Телефон
+          ul.contacts-info__list
+            li.contacts-info__item
+              a(itemprop="telephone" href="tel=+79493146906") +7(949)314-69-06
+        .contacts-info__block
+          h3 E-mail
+          ul.contacts-info__list
+            li.contacts-info__item
+              a(itemprop="email" href="mailto:stirolbiopharm@mail.ru") stirolbiopharm@mail.ru

@@ -1,0 +1,12 @@
+extends ./../layouts/main
+
+block variables
+  - let pageTitle = 'Медь Макс';
+
+block content
+  .wrap-feedback
+  .wrapper
+    include ./../components/sections/header/header.pug
+    include ./../components/bem-blocks/card-detailed/card-detailed.pug
+    include ./../components/sections/contacts/contacts.pug
+    include ./../components/sections/footer/footer.pug

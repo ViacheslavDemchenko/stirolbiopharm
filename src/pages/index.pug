@@ -1,0 +1,18 @@
+extends ./../layouts/main
+
+block variables
+  - let pageTitle = 'СтиролБиоФарм';
+
+block content
+  .wrap-feedback
+  .wrapper
+    .header__bg
+      include ./../components/sections/header/header.pug
+      include ./../components/sections/intro/intro.pug
+    main
+      include ./../components/sections/production/production.pug
+      include ./../components/sections/products/products.pug
+      include ./../components/sections/about/about.pug
+      include ./../components/sections/achievements/achievements.pug
+      include ./../components/sections/contacts/contacts.pug
+      include ./../components/sections/footer/footer.pug

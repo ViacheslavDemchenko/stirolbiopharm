@@ -1,0 +1,12 @@
+.socials--mobile {
+  max-width: 22rem;
+  margin: 5rem auto 0 auto;
+
+  .socials__list {
+    display: flex;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}

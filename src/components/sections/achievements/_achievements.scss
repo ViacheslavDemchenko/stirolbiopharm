@@ -1,0 +1,106 @@
+.achievements {
+  position: relative;
+  padding: 7rem 0;
+  background: rgba($blue-third, 0.08);
+
+  &__inner {
+    width: 100%;
+  }
+
+  .swiper-wrap {
+    position: relative;
+
+    @media (min-width: 1024px) {
+      width: 86%;
+      max-width: 85.2rem;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 1440px) {
+      width: 100%;
+      max-width: 93.2rem;
+    }
+  }
+
+  .swiper {
+    width: 26.4rem;
+    height: 39.3rem;
+
+    @media (min-width: 700px) {
+      width: 54.8rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 85.2rem;
+    }
+
+    @media (min-width: 1440px) {
+      width: 93.2rem;
+    }
+  }
+
+  .swiper-slide {
+    width: 26.4rem;
+    height: 39.3rem; 
+  }
+
+  .swiper-button-prev {
+
+    @media (min-width: 1024px) {
+      left: -7rem;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    @media (min-width: 1440px) {
+      left: -9rem;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+
+    @media (min-width: 1024px) {
+      right: -7rem;
+      top: 50%;
+      width: 6.6rem;
+      height: 6.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.3rem solid var(--green-primary);
+      border-radius: 50%;
+      background: var(--white-primary);
+      will-change: background;
+      transition: background 0.3s ease-in-out;
+
+      &::after {
+        content: "";
+      }
+  
+      svg {
+        width: 1.1rem;
+        height: 2.2rem;
+        fill: var(--green-primary);
+        will-change: fill;
+        transition: fill 0.3s ease-in-out;
+      }
+  
+      &:hover,
+      &:focus {
+        background: var(--green-primary);
+  
+        svg {
+          fill: var(--white-primary);
+        }
+      }
+    }
+
+    @media (min-width: 1440px) {
+      right: -9rem;
+    }
+  }
+}

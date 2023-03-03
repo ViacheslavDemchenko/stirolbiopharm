@@ -1,0 +1,11 @@
+.phone--desktop {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    max-width: 22.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,108 @@
+.footer {
+  padding: 4rem 0 5rem 0;
+  border-top: 0.1rem solid var(--gray-secondary);
+
+  &__inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+
+    @media (min-width: 600px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 900px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+      // grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .logo {
+      width: 19rem;
+      height: 7.2rem;
+      margin: 0 auto;
+      // display: flex;
+      // justify-content: center;
+      // margin-right: 0;
+
+      @media (min-width: 1200px) {
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
+
+    .search {
+      margin: 0 auto;
+
+      @media (min-width: 600px) {
+        display: flex;
+        align-items: center;
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      @media (min-width: 900px) {
+        margin-left: 1rem;
+      }
+
+      @media (min-width: 1200px) {
+        height: 5.2rem;
+        align-items: flex-start;
+        margin-left: 0;
+        grid-column: 3;
+        grid-row: 1;
+      }
+    }
+
+    .copyright {
+      margin-top: 2rem;
+    }
+
+    .socials--desktop {
+      display: flex;
+      justify-content: center;
+
+      @media (min-width: 900px) {
+        align-items: center;
+        grid-column: 3;
+        grid-row: 1;
+      }
+
+      @media (min-width: 1200px) {
+        align-items: flex-start;
+        justify-content: flex-end;
+        grid-column: 4;
+        grid-row: 1;
+      }
+
+      &__list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 1200px) {
+          width: 23rem;
+          justify-content: flex-end;
+        }
+
+        @media (min-width: 1440px) {
+          width: 30rem;
+        }
+
+        li:not(:last-of-type) {
+          @media (min-width: 1200px) {
+            margin-right: 5.5rem;
+          }
+        }
+
+        li:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+main
+  section.section.section--honeycombs-right.section--honeycombs-left.medicine
+    .container
+      include ../../bem-blocks/breadcrumbs/breadcrumbs.pug
+      h1 Каталог лекарственных препаратов
+      .medicine__inner 
+        nav(itemscope itemtype="https://schema.org/SiteNavigationElement").medicine__menu
+          button.btn.btn--animate.medicine__menu-title Каталог
+            span
+          ul(role="menu").medicine__menu-list 
+            li(itemprop="name" role="menuitem").medicine__menu-item
+              a(itemprop="url" href="#!").medicine__menu-link Все препараты
+            li(itemprop="name" role="menuitem").medicine__menu-item
+              a(itemprop="url" href="#!").medicine__menu-link Безрецептурные препараты
+            li(itemprop="name" role="menuitem").medicine__menu-item
+              a(itemprop="url" href="#!").medicine__menu-link Рецептурные препараты
+        .medicine__products 
+          ul(itemscope itemtype="https://schema.org/SiteNavigationElement").medicine__products-alphabet
+            li(itemprop="name")
+              a(itemprop="url" href="#!") А
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Б
+            li(itemprop="name")
+              a(itemprop="url" href="#!") В
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Г
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Д
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Е
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Ж
+            li(itemprop="name")
+              a(itemprop="url" href="#!") З
+            li(itemprop="name")
+              a(itemprop="url" href="#!") И
+            li(itemprop="name")
+              a(itemprop="url" href="#!") К
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Л
+            li(itemprop="name")
+              a(itemprop="url" href="#!") М
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Н
+            li(itemprop="name")
+              a(itemprop="url" href="#!") О
+            li(itemprop="name")
+              a(itemprop="url" href="#!") П
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Р
+            li(itemprop="name")
+              a(itemprop="url" href="#!") С
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Т
+            li(itemprop="name")
+              a(itemprop="url" href="#!") У
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Ф
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Х
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Ц
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Ч
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Ш
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Щ
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Э
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Ю
+            li(itemprop="name")
+              a(itemprop="url" href="#!") Я
+          .medicine__products-cards
+            - for (var i = 0; i < 6; i++)
+              include ../../bem-blocks/product-card/product-card.pug
+          include ../../bem-blocks/pagination/pagination.pug  
