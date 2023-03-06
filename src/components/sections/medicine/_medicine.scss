@@ -59,6 +59,7 @@
     &-title {
       position: relative;
       z-index: 1000;
+      width: 100%;
       padding: 1.2rem 4.727rem 1.2rem 8.727rem;
       // margin-bottom: 1.6rem;
       font-size: 2rem;
@@ -72,7 +73,7 @@
       // transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 
       @media (min-width: 1200px) {
-        position: static;
+        // position: static;
         margin-bottom: 1.6rem;
       }
 
@@ -103,9 +104,9 @@
         will-change: background;
         transition: background 0.3s ease-in-out;
 
-        @media (min-width: 1200px) {
-          top: 2.6rem;
-        }
+        // @media (min-width: 1200px) {
+        //   top: 2.6rem;
+        // }
 
         &::after,
         &::before {

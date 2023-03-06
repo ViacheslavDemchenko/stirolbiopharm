@@ -61,14 +61,21 @@
               <nav class="nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <ul class="nav__list" role="menu">
                   <li class="nav__item" itemprop="name" role="menuitem"><a itemprop="url" href="index.html">Главная</a></li>
-                  <li class="nav__item" itemprop="name" role="menuitem"><a itemprop="url" href="production-main.html">Производство</a></li>
+                  <li class="nav__item nav__item-submenu" itemprop="name" role="menuitem"><a itemprop="url" href="production-main.html">Производство</a>
+                    <ul class="submenu">
+                      <li class="submenu__item" itemprop="name"> <a itemprop="url" href="production-structure.html">Структура производства</a></li>
+                      <li class="submenu__item" itemprop="name"><a itemprop="url" href="production-process.html">Процесс производства</a></li>
+                      <li class="submenu__item" itemprop="name"><a itemprop="url" href="quality-control.html">Контроль качества</a></li>
+                      <li class="submenu__item" itemprop="name"><a itemprop="url" href="certification.html">Сертификация</a></li>
+                    </ul>
+                  </li>
                   <li class="nav__item nav__item-submenu" itemprop="name" role="menuitem"><a href="#!">Продукция</a>
                     <ul class="submenu">
                       <li class="submenu__item" itemprop="name"> <a itemprop="url" href="medicine.html">Лекарственные препараты</a></li>
                       <li class="submenu__item" itemprop="name"><a itemprop="url" href="bads.html">БАДы</a></li>
                     </ul>
                   </li>
-                  <li class="nav__item" itemprop="name" role="menuitem"><a itemprop="url" href="#!">О нас</a></li>
+                  <li class="nav__item" itemprop="name" role="menuitem"><a itemprop="url" href="about.html">О компании</a></li>
                   <li class="nav__item" itemprop="name" role="menuitem"><a itemprop="url" href="contacts.html">Контакты</a></li>
                 </ul>
                 <div class="socials socials--mobile">
@@ -97,7 +104,7 @@
               </nav>
               <div class="search" itemscope itemtype="https://schema.org/WebSite">
                 <meta itemprop="url" content="https://stirolbiopharm.ru">
-                <form class="search__form" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+                <form class="search__form" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction" role="search">
                   <meta itemprop="target" content="https://stirolbiopharm.ru/search/?q={query}">
                   <input itemprop="query-input" type="text" name="query" placeholder="Поиск по сайту">
                   <button type="submit">
@@ -114,8 +121,8 @@
       <main>
         <section class="section section--honeycombs-right section--honeycombs-left medicine">
           <div class="container">
-            <div class="breadcrumbs">
-              <ul class="breadcrumbs__links" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <div class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <ul class="breadcrumbs__links">
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"> <a itemprop="item" href="index.html"><span itemprop="name">Главная</span></a>
                   <meta itemprop="position" content="1">
                 </li>
@@ -233,13 +240,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="pagination">
+                <div class="pagination" itemscope itemtype="http://schema.org/SiteNavigationElement/Pagination">
                   <ul class="pagination__list">
-                    <li class="pagination__item prev"> <a href="#!">Назад</a></li>
-                    <li class="pagination__item pagination__item--active"><a href="#!">1</a></li>
-                    <li class="pagination__item"><a href="#!">2</a></li>
-                    <li class="pagination__item"><a href="#!">3</a></li>
-                    <li class="pagination__item next"><a href="#!">Вперёд</a></li>
+                    <li class="pagination__item prev"> <a itemprop="relatedLink/pagination" href="#!" rel="prev">Назад</a></li>
+                    <li class="pagination__item pagination__item--active"><a itemprop="relatedLink/pagination" href="#!">1</a></li>
+                    <li class="pagination__item"><a itemprop="relatedLink/pagination" href="#!">2</a></li>
+                    <li class="pagination__item"><a itemprop="relatedLink/pagination" href="#!">3</a></li>
+                    <li class="pagination__item next"><a itemprop="relatedLink/pagination" href="#!" rel="next">Вперёд</a></li>
                   </ul>
                 </div>
               </div>
@@ -273,7 +280,7 @@
             </div>
             <div class="search" itemscope itemtype="https://schema.org/WebSite">
               <meta itemprop="url" content="https://stirolbiopharm.ru">
-              <form class="search__form" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+              <form class="search__form" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction" role="search">
                 <meta itemprop="target" content="https://stirolbiopharm.ru/search/?q={query}">
                 <input itemprop="query-input" type="text" name="query" placeholder="Поиск по сайту">
                 <button type="submit">

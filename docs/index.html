@@ -62,14 +62,21 @@
                 <nav class="nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
                   <ul class="nav__list" role="menu">
                     <li class="nav__item" itemprop="name" role="menuitem"><a itemprop="url" href="index.html">Главная</a></li>
-                    <li class="nav__item" itemprop="name" role="menuitem"><a itemprop="url" href="production-main.html">Производство</a></li>
+                    <li class="nav__item nav__item-submenu" itemprop="name" role="menuitem"><a itemprop="url" href="production-main.html">Производство</a>
+                      <ul class="submenu">
+                        <li class="submenu__item" itemprop="name"> <a itemprop="url" href="production-structure.html">Структура производства</a></li>
+                        <li class="submenu__item" itemprop="name"><a itemprop="url" href="production-process.html">Процесс производства</a></li>
+                        <li class="submenu__item" itemprop="name"><a itemprop="url" href="quality-control.html">Контроль качества</a></li>
+                        <li class="submenu__item" itemprop="name"><a itemprop="url" href="certification.html">Сертификация</a></li>
+                      </ul>
+                    </li>
                     <li class="nav__item nav__item-submenu" itemprop="name" role="menuitem"><a href="#!">Продукция</a>
                       <ul class="submenu">
                         <li class="submenu__item" itemprop="name"> <a itemprop="url" href="medicine.html">Лекарственные препараты</a></li>
                         <li class="submenu__item" itemprop="name"><a itemprop="url" href="bads.html">БАДы</a></li>
                       </ul>
                     </li>
-                    <li class="nav__item" itemprop="name" role="menuitem"><a itemprop="url" href="#!">О нас</a></li>
+                    <li class="nav__item" itemprop="name" role="menuitem"><a itemprop="url" href="about.html">О компании</a></li>
                     <li class="nav__item" itemprop="name" role="menuitem"><a itemprop="url" href="contacts.html">Контакты</a></li>
                   </ul>
                   <div class="socials socials--mobile">
@@ -98,7 +105,7 @@
                 </nav>
                 <div class="search" itemscope itemtype="https://schema.org/WebSite">
                   <meta itemprop="url" content="https://stirolbiopharm.ru">
-                  <form class="search__form" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+                  <form class="search__form" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction" role="search">
                     <meta itemprop="target" content="https://stirolbiopharm.ru/search/?q={query}">
                     <input itemprop="query-input" type="text" name="query" placeholder="Поиск по сайту">
                     <button type="submit">
@@ -203,7 +210,7 @@
             <h2>Наши достижения</h2>
             <div class="achievements__inner">
               <div class="swiper-wrap">
-                <div class="swiper">
+                <div class="swiper achievements__slider">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide" itemscope itemtype="http://schema.org/ImageObject"><img src="./wp-content/themes/stirolbiopharm/assets/img/achievement-1.jpg" itemprop="contentUrl" width="" height="" alt="Благодарственная граммота">
                       <meta itemprop="description" content="Благодарственная граммота">
@@ -271,7 +278,7 @@
               </div>
               <div class="search" itemscope itemtype="https://schema.org/WebSite">
                 <meta itemprop="url" content="https://stirolbiopharm.ru">
-                <form class="search__form" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+                <form class="search__form" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction" role="search">
                   <meta itemprop="target" content="https://stirolbiopharm.ru/search/?q={query}">
                   <input itemprop="query-input" type="text" name="query" placeholder="Поиск по сайту">
                   <button type="submit">

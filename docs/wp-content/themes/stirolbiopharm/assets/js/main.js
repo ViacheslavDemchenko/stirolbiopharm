@@ -353,16 +353,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_stickyMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/stickyMenu */ "./src/js/modules/stickyMenu.js");
 /* harmony import */ var _modules_mobileMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/mobileMenu */ "./src/js/modules/mobileMenu.js");
 /* harmony import */ var _modules_map_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/map.js */ "./src/js/modules/map.js");
-/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
-/* harmony import */ var _modules_catalog__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/catalog */ "./src/js/modules/catalog.js");
-/* harmony import */ var _modules_pills__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/pills */ "./src/js/modules/pills.js");
+/* harmony import */ var _modules_achievements__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/achievements */ "./src/js/modules/achievements.js");
+/* harmony import */ var _modules_laboratories__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/laboratories */ "./src/js/modules/laboratories.js");
+/* harmony import */ var _modules_catalog__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/catalog */ "./src/js/modules/catalog.js");
+/* harmony import */ var _modules_pills__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/pills */ "./src/js/modules/pills.js");
 __webpack_require__(/*! polyfill-nodelist-foreach */ "./node_modules/polyfill-nodelist-foreach/index.js"); // Полифил для поддержки метода forEach в IE11+ и Safari9
 __webpack_require__(/*! svgxuse */ "./node_modules/svgxuse/svgxuse.js"); // Полифил для поддержки IE11+ и старыми браузерами использования SVG через use 
 
  // Липкое меню
  // Мобильное меню
  // Карта
- // Слайдер
+ // Слайдер граммот секции Наши достижения
+ // Слайдер граммот логотипов лабораторий страница Производство
  // Меню каталога (открытие)
  // Левитирующие таблетки
 
@@ -372,10 +374,11 @@ __webpack_require__(/*! svgxuse */ "./node_modules/svgxuse/svgxuse.js"); // По
 
 // stickyMenu();
 Object(_modules_mobileMenu__WEBPACK_IMPORTED_MODULE_1__["default"])();
-Object(_modules_slider__WEBPACK_IMPORTED_MODULE_3__["default"])();
+Object(_modules_achievements__WEBPACK_IMPORTED_MODULE_3__["default"])();
+Object(_modules_laboratories__WEBPACK_IMPORTED_MODULE_4__["default"])();
 Object(_modules_map_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
-Object(_modules_catalog__WEBPACK_IMPORTED_MODULE_4__["default"])();
-Object(_modules_pills__WEBPACK_IMPORTED_MODULE_5__["default"])();
+Object(_modules_catalog__WEBPACK_IMPORTED_MODULE_5__["default"])();
+Object(_modules_pills__WEBPACK_IMPORTED_MODULE_6__["default"])();
 // accordion();
 
 // modal();
@@ -4683,6 +4686,60 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;function _type
 
 /***/ }),
 
+/***/ "./src/js/modules/achievements.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/achievements.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return achievements; });
+/* harmony import */ var _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../libs/swiper-bundle.min.js */ "./src/js/libs/swiper-bundle.min.js");
+/* harmony import */ var _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0__);
+ // Слайдер
+
+function achievements() {
+  if (document.querySelector('.achievements__slider')) {
+    var swiper = new _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default.a('.achievements__slider', {
+      spaceBetween: 70,
+      loopedSlides: 1,
+      slidesPerView: 3,
+      autoHeight: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      breakpoints: {
+        320: {
+          spaceBetween: 0,
+          loopedSlides: 1,
+          slidesPerView: 1,
+          autoHeight: true
+        },
+        700: {
+          spaceBetween: 20,
+          loopedSlides: 1,
+          slidesPerView: 2
+        },
+        1024: {
+          spaceBetween: 30,
+          loopedSlides: 1,
+          slidesPerView: 3
+        },
+        1440: {
+          spaceBetween: 70,
+          loopedSlides: 1,
+          slidesPerView: 3
+        }
+      }
+    });
+  }
+}
+
+/***/ }),
+
 /***/ "./src/js/modules/catalog.js":
 /*!***********************************!*\
   !*** ./src/js/modules/catalog.js ***!
@@ -4727,6 +4784,46 @@ function catalog() {
       }
       if (screenWidth >= 1200) {
         catalogMenuClose();
+      }
+    });
+  }
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/laboratories.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/laboratories.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return laboratories; });
+/* harmony import */ var _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../libs/swiper-bundle.min.js */ "./src/js/libs/swiper-bundle.min.js");
+/* harmony import */ var _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0__);
+ // Слайдер
+
+function laboratories() {
+  if (document.querySelector('.production-laboratories__logos')) {
+    var swiper = new _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default.a('.production-laboratories__logos', {
+      spaceBetween: 0,
+      loopedSlides: 1,
+      slidesPerView: 1,
+      autoHeight: true,
+      centeredSlides: true,
+      loop: true,
+      effect: 'flip',
+      grabCursor: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'bullets'
       }
     });
   }
@@ -4854,60 +4951,6 @@ function pills() {
       });
     }
     showPills();
-  }
-}
-
-/***/ }),
-
-/***/ "./src/js/modules/slider.js":
-/*!**********************************!*\
-  !*** ./src/js/modules/slider.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return slider; });
-/* harmony import */ var _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../libs/swiper-bundle.min.js */ "./src/js/libs/swiper-bundle.min.js");
-/* harmony import */ var _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0__);
- // Слайдер
-
-function slider() {
-  if (document.querySelector('.swiper')) {
-    var swiper = new _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default.a('.swiper', {
-      spaceBetween: 70,
-      loopedSlides: 1,
-      slidesPerView: 3,
-      autoHeight: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      },
-      breakpoints: {
-        320: {
-          spaceBetween: 0,
-          loopedSlides: 1,
-          slidesPerView: 1,
-          autoHeight: true
-        },
-        700: {
-          spaceBetween: 20,
-          loopedSlides: 1,
-          slidesPerView: 2
-        },
-        1024: {
-          spaceBetween: 30,
-          loopedSlides: 1,
-          slidesPerView: 3
-        },
-        1440: {
-          spaceBetween: 70,
-          loopedSlides: 1,
-          slidesPerView: 3
-        }
-      }
-    });
   }
 }
 

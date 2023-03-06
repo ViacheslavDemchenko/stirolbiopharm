@@ -2,8 +2,17 @@ nav(itemscope itemtype="https://schema.org/SiteNavigationElement").nav
   ul(role="menu").nav__list
     li(itemprop="name" role="menuitem").nav__item
       a(itemprop="url" href="index.html") Главная
-    li(itemprop="name" role="menuitem").nav__item
+    li(itemprop="name" role="menuitem").nav__item.nav__item-submenu
       a(itemprop="url" href="production-main.html") Производство
+      ul.submenu
+        li(itemprop="name").submenu__item 
+          a(itemprop="url" href="production-structure.html") Структура производства
+        li(itemprop="name").submenu__item
+          a(itemprop="url" href="production-process.html") Процесс производства
+        li(itemprop="name").submenu__item
+          a(itemprop="url" href="quality-control.html") Контроль качества
+        li(itemprop="name").submenu__item
+          a(itemprop="url" href="certification.html") Сертификация
     li(itemprop="name" role="menuitem").nav__item.nav__item-submenu
        a(href="#!") Продукция
        ul.submenu
@@ -12,7 +21,7 @@ nav(itemscope itemtype="https://schema.org/SiteNavigationElement").nav
         li(itemprop="name").submenu__item
           a(itemprop="url" href="bads.html") БАДы
     li(itemprop="name" role="menuitem").nav__item
-      a(itemprop="url" href="#!") О нас
+      a(itemprop="url" href="about.html") О компании
     li(itemprop="name" role="menuitem").nav__item
       a(itemprop="url" href="contacts.html") Контакты
   include ../../bem-blocks/socials-mobile/socials-mobile.pug

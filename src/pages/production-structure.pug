@@ -1,0 +1,12 @@
+extends ./../layouts/main
+
+block variables
+  - let pageTitle = 'Структура производства';
+
+block content
+  .wrap-feedback
+  .wrapper
+    include ./../components/sections/header/header.pug
+    include ./../components/sections/production-structure/production-structure.pug
+    include ./../components/sections/contacts/contacts.pug
+    include ./../components/sections/footer/footer.pug

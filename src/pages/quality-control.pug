@@ -1,0 +1,12 @@
+extends ./../layouts/main
+
+block variables
+  - let pageTitle = 'Контроль качества';
+
+block content
+  .wrap-feedback
+  .wrapper
+    include ./../components/sections/header/header.pug
+    include ./../components/sections/quality-control/quality-control.pug
+    include ./../components/sections/contacts/contacts.pug
+    include ./../components/sections/footer/footer.pug

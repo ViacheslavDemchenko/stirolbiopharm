@@ -1,18 +1,1 @@
-<svg
-  id="Слой_1"
-  data-name="Слой 1"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 45.89 45.89"
-><defs><style>.cls-1{fill:#4fd066;}.cls-2{fill:#fff;}</style></defs><circle
-    class="cls-1"
-    cx="22.94"
-    cy="22.94"
-    r="21.94"
-  /><rect class="cls-2" x="18.89" y="10.94" width="8" height="24" rx="1" /><rect
-    class="cls-2"
-    x="10.89"
-    y="18.94"
-    width="24"
-    height="8"
-    rx="1"
-  /></svg>
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46"><defs><style>.cls-1{fill:#4fb04f;stroke:#fff;stroke-width:2px;}.cls-2{fill:none;stroke:#4fb04f;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}.cls-3{fill:#fff;}</style></defs><circle class="cls-1" cx="23" cy="23" r="22"/><path class="cls-2" d="M23.3,35.52V33.71m0-18.19V22.8m0,0,3.5-3.64M23.3,22.8v5.45m0-5.45-3.5-3.64m7,5.46-3.5,3.63m0,0v5.46m0-5.46-3.5-3.63m7,5.45-3.5,3.64m0,0-3.5-3.64" transform="translate(-0.38 -0.4)"/><rect class="cls-3" x="19" y="11" width="8" height="24" rx="1"/><rect class="cls-3" x="11" y="19" width="24" height="8" rx="1"/></svg>

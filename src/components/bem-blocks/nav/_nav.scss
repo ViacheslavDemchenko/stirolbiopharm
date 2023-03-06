@@ -42,14 +42,16 @@
 
     .submenu {
       position: absolute;
-      top: 100%;
-      left: -100%;
       z-index: 10;
+      top: 100%;
+      left: 0;
       overflow: hidden;
+      width: max-content;
       opacity: 0;
       padding-top: 1rem;
       border-radius: 0.5rem;
       background: $blue-third;
+      pointer-events: none;
       will-change: opacity, left;
       transition: opacity 1s ease-in-out, left 1s ease-in-out;
 
@@ -136,7 +138,7 @@
     &:focus {
       .submenu {
         opacity: 1;
-        left: 0;
+        pointer-events: initial;
       }
     }
   }

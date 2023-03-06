@@ -1,19 +1,28 @@
 section.production-main
   .container
-    include ../../bem-blocks/breadcrumbs/breadcrumbs.pug
+    div(itemscope itemtype="http://schema.org/BreadcrumbList").breadcrumbs
+      ul.breadcrumbs__links
+        li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem") 
+          a(itemprop="item" href="index.html")
+            span(itemprop="name") Главная
+          meta(itemprop="position" content="1")
+        li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+          a(itemprop="item")
+            span(itemprop="name") Производство
+          meta(itemprop="position" content="2")
     h1 Производство
-    .production-main__inner 
+    .section.section__inner.production-main__inner 
       .production-main__text 
         p Компания 
-          span «Стиролбиофарм» 
+          i «Стиролбиофарм» 
           | – современный, самостоятельный и успешный представитель 
           | рынка фармацевтических препаратов.
         p За 
-          span 16 лет существования 
+          i 16 лет существования 
           | фармацевтическое производство предприятия сертифицировано рядом международных организаций. 
         p Высокое качество выпускаемой продукции подтверждено множеством сертификатов качества.
-        button.btn.production-main__btn Подробнее
+        a(href="quality-control.html").btn.btn--animate Подробнее
       .production-main__video
         .play
         video(poster="./wp-content/themes/stirolbiopharm/assets/img/poster.jpg")
-          source(src="./wp-content/themes/stirolbiopharm/assets/video/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"') 
+          //- source(src="./wp-content/themes/stirolbiopharm/assets/video/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"') 

@@ -1,8 +1,8 @@
 import Swiper from './../libs/swiper-bundle.min.js'; // Слайдер
 
-export default function slider() {
-  if(document.querySelector('.swiper')) {
-    const swiper = new Swiper('.swiper', {
+export default function achievements() {
+  if(document.querySelector('.achievements__slider')) {
+    const swiper = new Swiper('.achievements__slider', {
       spaceBetween: 70,
       loopedSlides: 1,
       slidesPerView: 3,

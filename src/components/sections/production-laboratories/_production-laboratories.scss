@@ -1,0 +1,102 @@
+.production-laboratories {
+
+  &__text {
+    max-width: 72.5rem;
+    padding: 3rem 2.5rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    background: url("../img/hand.png") right 100%/17.5rem 16.8rem no-repeat, rgba($blue-third, 0.08);
+
+    @media (min-width: 650px) {
+      background: url("../img/hand.png") right 100%/21.5rem 20.8rem no-repeat, rgba($blue-third, 0.08);
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 65.5rem;
+      margin-top: 0;
+      margin-left: 3rem;
+      padding: 6.6rem 5.2rem;
+      background: url("../img/hand.png") right 103%/26.5rem 25.8rem no-repeat, rgba($blue-third, 0.08);
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--black-secondary);
+
+      @media (min-width: 1200px) {
+        font-size: 1.8rem;
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: 2.95rem;
+      }
+
+      &:last-of-type {
+        margin-bottom: 11rem;
+
+        @media (min-width: 650px) {
+          margin-bottom: 15rem;
+        }
+
+        // @media (min-width: 1200px) {
+        //   margin-bottom: 15.2rem;
+        // }
+
+        // @media (min-width: 1440px) {
+        //   margin-bottom: 8.2rem;
+        // }
+      }
+    }
+  }
+
+  &__logos {
+    width: 100%;
+    max-width: 72.5rem;
+    border: 0.3rem solid var(--green-secondary);
+    border-radius: 1rem;
+
+    @media (min-width: 1200px) {
+      max-width: 71.4rem;
+    }
+
+    .swiper-slide {
+      opacity: 0;
+
+      &-active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.swiper-pagination {
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: 1200px) {
+    bottom: 2.5rem;
+  }
+
+  &-bullet {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.3rem solid var(--green-secondary);
+    background: var(--white-primary);
+
+    @media (min-width: 1200px) {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 1.5rem;
+    }
+
+    &-active {
+      background: var(--green-secondary);
+    }
+  }
+}
