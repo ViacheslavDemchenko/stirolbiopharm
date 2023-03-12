@@ -357,6 +357,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_laboratories__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/laboratories */ "./src/js/modules/laboratories.js");
 /* harmony import */ var _modules_catalog__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/catalog */ "./src/js/modules/catalog.js");
 /* harmony import */ var _modules_pills__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/pills */ "./src/js/modules/pills.js");
+/* harmony import */ var _modules_video__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/video */ "./src/js/modules/video.js");
 __webpack_require__(/*! polyfill-nodelist-foreach */ "./node_modules/polyfill-nodelist-foreach/index.js"); // Полифил для поддержки метода forEach в IE11+ и Safari9
 __webpack_require__(/*! svgxuse */ "./node_modules/svgxuse/svgxuse.js"); // Полифил для поддержки IE11+ и старыми браузерами использования SVG через use 
 
@@ -367,6 +368,7 @@ __webpack_require__(/*! svgxuse */ "./node_modules/svgxuse/svgxuse.js"); // По
  // Слайдер граммот логотипов лабораторий страница Производство
  // Меню каталога (открытие)
  // Левитирующие таблетки
+
 
 // import accordion from './modules/accordion.js'; // Аккордион
 
@@ -379,6 +381,7 @@ Object(_modules_laboratories__WEBPACK_IMPORTED_MODULE_4__["default"])();
 Object(_modules_map_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
 Object(_modules_catalog__WEBPACK_IMPORTED_MODULE_5__["default"])();
 Object(_modules_pills__WEBPACK_IMPORTED_MODULE_6__["default"])();
+Object(_modules_video__WEBPACK_IMPORTED_MODULE_7__["default"])();
 // accordion();
 
 // modal();
@@ -4988,6 +4991,30 @@ function stickyMenu() {
       headerBg.style.paddingTop = 0;
     }
   });
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/video.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/video.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return video; });
+function video() {
+  if (document.querySelector('.youtube')) {
+    var _video = document.querySelector('.youtube');
+    var play = document.querySelector('.play');
+    var iframe = document.getElementsByTagName('iframe')[0];
+    _video.addEventListener('click', function () {
+      play.style.display = 'none';
+      iframe.style.display = 'block';
+    });
+  }
 }
 
 /***/ })

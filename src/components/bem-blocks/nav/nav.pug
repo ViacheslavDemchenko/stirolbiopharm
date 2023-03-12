@@ -1,28 +1,28 @@
-nav(itemscope itemtype="https://schema.org/SiteNavigationElement").nav
-  ul(role="menu").nav__list
-    li(itemprop="name" role="menuitem").nav__item
-      a(itemprop="url" href="index.html") Главная
-    li(itemprop="name" role="menuitem").nav__item.nav__item-submenu
-      a(itemprop="url" href="production-main.html") Производство
-      ul.submenu
-        li(itemprop="name").submenu__item 
-          a(itemprop="url" href="production-structure.html") Структура производства
-        li(itemprop="name").submenu__item
-          a(itemprop="url" href="production-process.html") Процесс производства
-        li(itemprop="name").submenu__item
-          a(itemprop="url" href="quality-control.html") Контроль качества
-        li(itemprop="name").submenu__item
-          a(itemprop="url" href="certification.html") Сертификация
-    li(itemprop="name" role="menuitem").nav__item.nav__item-submenu
+nav.nav
+  ul(role="menu").menu
+    li(role="menuitem").menu-item 
+      a(href="index.html") Главная
+    li(role="menuitem").menu-item
+      a(href="production-main.html") Производство
+      ul.sub-menu
+        li
+          a(href="production-structure.html") Структура производства
+        li
+          a(href="production-process.html") Процесс производства
+        li
+          a(href="quality-control.html") Контроль качества
+        li
+          a(href="certification.html") Сертификация
+    li(role="menuitem").menu-item
        a(href="#!") Продукция
-       ul.submenu
-        li(itemprop="name").submenu__item 
-          a(itemprop="url" href="medicine.html") Лекарственные препараты
-        li(itemprop="name").submenu__item
-          a(itemprop="url" href="bads.html") БАДы
-    li(itemprop="name" role="menuitem").nav__item
-      a(itemprop="url" href="about.html") О компании
-    li(itemprop="name" role="menuitem").nav__item
-      a(itemprop="url" href="contacts.html") Контакты
+       ul.sub-menu
+        li
+          a(href="medicine.html") Лекарственные препараты
+        li
+          a(href="bads.html") БАДы
+    li(role="menuitem").menu-item
+      a(href="about.html") О компании
+    li(role="menuitem").menu-item
+      a(href="contacts.html") Контакты
   include ../../bem-blocks/socials-mobile/socials-mobile.pug
   include ../../bem-blocks/phone-mobile/phone-mobile.pug

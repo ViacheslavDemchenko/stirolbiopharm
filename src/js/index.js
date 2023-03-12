@@ -8,6 +8,7 @@ import achievements from './modules/achievements'; // Слайдер грамм�
 import laboratories from './modules/laboratories'; // Слайдер граммот логотипов лабораторий страница Производство
 import catalog from './modules/catalog'; // Меню каталога (открытие)
 import pills from './modules/pills'; // Левитирующие таблетки
+import video from './modules/video';
 
 // import accordion from './modules/accordion.js'; // Аккордион
 
@@ -20,6 +21,7 @@ laboratories();
 yandexMap();
 catalog();
 pills();
+video();
 // accordion();
 
 // modal();

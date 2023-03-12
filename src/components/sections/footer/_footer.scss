@@ -18,16 +18,12 @@
 
     @media (min-width: 1200px) {
       grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
-      // grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .logo {
       width: 19rem;
       height: 7.2rem;
       margin: 0 auto;
-      // display: flex;
-      // justify-content: center;
-      // margin-right: 0;
 
       @media (min-width: 1200px) {
         display: flex;

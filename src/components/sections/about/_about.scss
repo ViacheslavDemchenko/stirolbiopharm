@@ -94,7 +94,6 @@
     border-radius: 1rem;
 
     @media (min-width: 1024px) {
-      // width: 60%;
       max-width: 76.9rem;
       margin-top: 0;
       padding: 2.5rem 3.5rem;
@@ -111,9 +110,10 @@
 
     &-content {
       margin-bottom: 2.2rem;
+      @include RalewayRegular();
       font-size: 1.6rem;
       font-weight: 400;
-      line-height: 2.8rem;
+      line-height: 1.2;
       color: var(--black-secondary);
 
       @media (min-width: 1024px) {
@@ -131,17 +131,7 @@
 
     &-btn {
       display: block;
-      padding: 1rem 2rem;
       margin-top: 2.8rem;
-      font-size: 1.6rem;
-      font-weight: 500;
-      line-height: 2rem;
-      color: var(--white-primary);
-      border: 0.3rem solid #4FD066;
-      border-radius: 5rem;
-      background: var(--green-secondary);
-      // will-change: background, color;
-      // transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 
       @media (min-width: 1024px) {
         padding: 1.5rem 2.5rem;
@@ -152,12 +142,6 @@
         font-size: 1.8rem;
         line-height: 2.7rem;
       }
-
-      // &:hover,
-      // &:focus {
-      //   color: var(--green-primary);
-      //   background: var(--white-secondary);
-      // }
     }
 
     &-wrap {

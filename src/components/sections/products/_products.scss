@@ -1,16 +1,4 @@
 .products {
-  // position: relative;
-  // padding: 3.5rem 0;
-
-  // &::before {
-  //   position: absolute;
-  //   content: "";
-  //   bottom: -88rem;
-  //   left: -9rem;
-  //   width: 80rem;
-  //   height: 115rem;
-  //   background: url("../img/honeycombs-left.png") center center / cover no-repeat;
-  // }
 
   h2 {
     margin-bottom: 10rem;
@@ -33,7 +21,7 @@
 
   &__item {
     position: relative;
-    min-height: 504px;
+    min-height: 50.4rem;
 
     &::before {
       position: absolute;
@@ -114,9 +102,10 @@
         max-width: 25rem;
         margin: 0 auto;
         text-align: center;
+        @include RalewayBold();
         font-size: 1.8rem;
         font-weight: 700;
-        line-height: 2.5rem;
+        line-height: 1.2;
         text-transform: uppercase;
         color: var(--black-secondary);
 

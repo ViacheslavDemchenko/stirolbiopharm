@@ -1,14 +1,8 @@
 .production-direction {
-  // padding: 3.5rem 0 3.5rem 0;
 
   h2 {
     max-width: 123rem;
     text-align: center;
-    // font-size: 2rem;
-
-    // @media (min-width: 1440px) {
-    //   font-size: 4.8rem;
-    // }
   }
 
   &__inner {
@@ -25,10 +19,6 @@
     @media (min-width: 768px) {
       gap: 2rem 14.5rem;
     }
-
-    // @media (min-width: 1024px) {
-    //   gap: 10rem;
-    // }
 
     @media (min-width: 1440px) {
       gap: 17.9rem;

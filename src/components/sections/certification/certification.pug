@@ -1,19 +1,16 @@
-section.certification
+section.certification.section.section--honeycombs-right
   .container
-    div(itemscope itemtype="http://schema.org/BreadcrumbList").breadcrumbs
+    .breadcrumbs
       ul.breadcrumbs__links
-        li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem") 
-          a(itemprop="item" href="index.html")
-            span(itemprop="name") Главная
-          meta(itemprop="position" content="1")
-        li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-          a(itemprop="item" href="production-main.html")
-            span(itemprop="name") Производство
-          meta(itemprop="position" content="2")
-        li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-          a(itemprop="item")
-            span(itemprop="name") Сертификация
-          meta(itemprop="position" content="3")
+        li
+          a(href="index.html")
+            span Главная
+        li
+          a(href="production-main.html")
+            span Производство
+        li
+          a
+            span Сертификация
     h1 Сертификация
     .certification__subtitle 
       p Производство компаниии ООО “Стиролбиофарм” отвечает концепциям обеспечения качества 
@@ -37,6 +34,8 @@ section.certification
        | нормам GMP Европейского союза. Сертификат GMP № ZVA/LV/2009/008H от 06.05.2009.
       p Февраль 2011 г – Предприятие сертифицировано Государственным Агентством лекарств Латвийской Республики на 
         | соответствие нормам GMP Европейского союза. Сертификат GMP № ZVA/LV/2011/003H от 03.02.2011.
+section.certification-blocks.section.section--honeycombs-right.section--honeycombs-left
+  .container
     .certification__block 
       .certification__block-text 
         p 
@@ -50,9 +49,7 @@ section.certification
           | Жесткие требования к качеству по международным стандартам ISO используются для сертификации изделий, 
           | предназначенных для экспорта в другие страны и реализации на мировом рынке.
       .certification__block-img
-        div(itemscope itemtype="http://schema.org/ImageObject")
-          img(src="./wp-content/themes/stirolbiopharm/assets/img/iso.png" itemprop="contentUrl" width="305" height="305" alt="Стандарт ISO 9000")
-          meta(itemprop="description" content="Стандарт ISO 9000")
+          img(src="./wp-content/themes/stirolbiopharm/assets/img/iso.png" width="305" height="305" alt="Стандарт ISO 9000")
     .certification__block 
       .certification__block-text 
         p Стандарт 
@@ -66,6 +63,4 @@ section.certification
           i стандарт GMP 
           | отражает целостный подход и регулирует и оценивает собственно параметры производства и лабораторной проверки.
       .certification__block-img
-        div(itemscope itemtype="http://schema.org/ImageObject")
-          img(src="./wp-content/themes/stirolbiopharm/assets/img/gmp.png" itemprop="contentUrl" width="305" height="305" alt="Стандарт GMP")
-          meta(itemprop="description" content="Стандарт GMP")
+          img(src="./wp-content/themes/stirolbiopharm/assets/img/gmp.png" width="305" height="305" alt="Стандарт GMP")

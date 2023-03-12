@@ -1,8 +1,6 @@
-div(itemscope itemtype="https://schema.org/WebSite").search
-  meta(itemprop="url" content="https://stirolbiopharm.ru")
-  form(itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction" role="search").search__form
-    meta(itemprop="target" content="https://stirolbiopharm.ru/search/?q={query}")
-    input(itemprop="query-input" type="text" name="query" placeholder="Поиск по сайту")
+.search
+  form(role="search").search__form
+    input(type="text" name="query" placeholder="Поиск по сайту")
     button(type="submit")
       svg(aria-hidden="true")
         use(xlink:href="./wp-content/themes/stirolbiopharm/assets/img/icons/sprite.svg#search")

@@ -23,9 +23,6 @@
   }
   
   &__inner {
-    // display: grid;
-    // grid-template-columns: 1fr;
-    // column-gap: 6.4rem;
 
     @media (min-width: 1200px) {
       grid-template-columns: 1fr 1fr;
@@ -53,7 +50,6 @@
   }
 
   &__text {
-    // max-width: 79.2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -217,8 +213,6 @@
   .gallery__item-main {
     width: 100%;
     max-width: 52.6rem;
-    // height: 30.3rem;
-    // margin-bottom: 3.1rem;
 
     @media (min-width: 1200px) {
       margin-bottom: 3.1rem;
@@ -226,8 +220,6 @@
 
     @media (min-width: 1440px) {
       width: 52.6rem;
-      // height: 30.3rem;
-      // margin-bottom: 7.1rem;
     }
   }
 
@@ -245,21 +237,7 @@
     }
 
     @media (min-width: 1200px) {
-      // grid-template-columns: repeat(3, 1fr);
       gap: 3.1rem 1.1rem;
     }
-
-    // .gallery__item {
-    //   width: 16.7rem;
-    //   height: 12.8rem;
-
-    //   @media (min-width: 1200px) {
-    //     grid-template-columns: repeat(3, 1fr);
-    //     gap: 3.1rem 1.1rem;
-    //   }
-    // }
-
   }
-
-
 }

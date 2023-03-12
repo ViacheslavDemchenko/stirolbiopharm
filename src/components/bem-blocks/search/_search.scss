@@ -45,18 +45,25 @@
 input {
   width: 100%;
   padding: 1rem 2rem;
+  @include RalewayMedium();
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--gray-primary);
   outline: none;
   border-radius: 5rem;
   border: 0.2rem solid var(--green-primary);
 
   @media (min-width: 1024px) {
     padding: 1.5rem 3rem;
+    font-size: 1.6rem;
   }
 
   &::placeholder {
+    @include RalewayMedium();
     font-size: 1.4rem;
     font-weight: 500;
-    line-height: 1.7rem;
+    line-height: 1.2;
     color: var(--gray-primary);
 
     @media (min-width: 1024px) {

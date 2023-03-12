@@ -10,8 +10,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Rubik-Regular", "Arial", "Tahoma", sans-serif;
+  font-family: "Raleway", "PT Serif Caption", "Arial", "Tahoma", sans-serif;
   font-weight: 400;
+  line-height: 1.2;
   font-style: normal;
   text-rendering: optimizelegibility;
   overflow-x: hidden;
@@ -63,7 +64,8 @@ footer {
     @media (min-width: 1440px) {
 
       &::before {
-        bottom: 22rem;
+        // bottom: 22rem;
+        bottom: 12rem;
         left: -30rem;
         width: 58rem;
         height: 47rem;
@@ -71,7 +73,8 @@ footer {
       }
   
       &::after {
-        bottom: 22rem;
+        // bottom: 22rem;
+        bottom: 12rem;
         right: -19rem;
         width: 109.1rem;
         height: 76.5rem;
@@ -82,7 +85,6 @@ footer {
     @media (min-width: 1920px) {
       &::before {
         left: -43rem;
-        // bottom: 30rem;
       }
     }
   }
@@ -94,25 +96,6 @@ footer {
 
   @media (min-width: 1024px) {
     padding-right: 1.7rem;
-  }
-}
-
-// Затемняющий фон под модалкми
-.overlay {
-  position: fixed;
-  z-index: 9000;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: none;
-  background: var(--light-gray);
-  opacity: 0.8;
-  will-change: display;
-  transition: display 0.5s ease-out;
-
-  &--active {
-      display: block;
   }
 }
 
@@ -135,10 +118,10 @@ footer {
 // }
 
 // Обертка липкого меню
-.fixed-wrap {
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  will-change: auto;
-  transition: all .5s ease-out;
-}
+// .fixed-wrap {
+//   width: 100%;
+//   max-width: 1140px;
+//   margin: 0 auto;
+//   will-change: auto;
+//   transition: all .5s ease-out;
+// }

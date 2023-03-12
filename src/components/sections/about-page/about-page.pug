@@ -1,18 +1,16 @@
 main 
-  section.about-page 
+  section.about-page.section.section--honeycombs-right
     .container 
-      div(itemscope itemtype="http://schema.org/BreadcrumbList").breadcrumbs
+      div.breadcrumbs
         ul.breadcrumbs__links
-          li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem") 
-            a(itemprop="item" href="index.html")
-              span(itemprop="name") Главная
-            meta(itemprop="position" content="1")
-          li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-            a(itemprop="item")
-              span(itemprop="name") О компании
-            meta(itemprop="position" content="2")
+          li
+            a(href="index.html")
+              span Главная
+          li
+            a
+              span О компании
       h1 О компании
-      .section.section__inner.about-page__inner 
+      .about-page__inner 
         .about-page__text
           p Завод по производству твердых лекарственных форм «Фармация» введен в эксплуатацию 
             i 09.10.1996 г, 
@@ -29,7 +27,7 @@ main
           video(poster="./wp-content/themes/stirolbiopharm/assets/img/poster.jpg")
   section.about-page__history
     .container
-      .section.section__inner.about-page__history-inner 
+      .about-page__history-inner
         h2 Вехи развития предприятия:
         .about-page__years 
           span 1998
@@ -79,31 +77,15 @@ main
             | предназначена для контроля качества продукции ЖСЛС на пирогенность и аномальную токсичность, 
             | проведения доклинических испытаний лекарственных препаратов.
         .about-page__gallery 
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-  section.about-page__bottom
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+  section.about-page__bottom.section.section--honeycombs-left
     .container
       .section__inner.about-page__inner 
         .about-page__text-bottom
@@ -117,6 +99,4 @@ main
           p Стиролбиофарм будет и в дальнейшем работать для обеспечения, в первую очередь, потребностей 
             | отечественного здравоохранения. Это– основная задача нашего предприятия.
         .about-page__img-bottom
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/about-history.jpg" itemprop="contentUrl" width="576" height="569" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/about-history.jpg" width="576" height="569" alt="Таблетки")

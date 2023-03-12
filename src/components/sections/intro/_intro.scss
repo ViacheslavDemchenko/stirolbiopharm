@@ -1,5 +1,8 @@
 .intro {
   height: 100%;
+  // height: 108rem;
+  height: calc(108rem - 24.2rem);
+  // overflow: hidden;
   padding-bottom: 26rem;
   padding-top: 0;
 
@@ -7,14 +10,28 @@
     padding-bottom: 1.75rem;
   }
 
+  // @media (min-width: 1440px) {
+  //   background: url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
+  // }
+
+  // @media (min-width: 1600px) {
+  //   background: url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
+  // }
+
+  // @media (min-width: 1700px) {
+  //   background: url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
+  // }
+
+  // @media (min-width: 1920px) {
+  //   background: url("../img/main-page-bg.jpg") center center/cover no-repeat;
+  // }
+
   &__inner {
     position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    // justify-content: space-between;
-    // padding-top: 8rem;
 
     @media (min-width: 1200px) {
       padding-top: 4rem;
@@ -22,47 +39,9 @@
     }
 
     @media (min-width: 1440px) {
-      padding-top: 8rem;
+      // padding-top: 30rem;
+      padding-top: 2rem;
     }
-
-    // &::after,
-    // &::before {
-    //   position: absolute;
-    //   content: "";
-    // }
-
-    // &::after {
-    //   bottom: -40rem;
-    //   left: -12rem;
-    //   width: 32rem;
-    //   height: 25rem;
-    //   // background: url("../img/bird.png") center center / cover no-repeat;
-
-    //   @media (min-width: 1024px) {
-    //     bottom: -25rem;
-    //     left: -57rem;
-    //     width: 60.5rem;
-    //     height: 45.6rem;
-    //   }
-    // }
-
-    // &::before {
-    //   display: none;
-    //   // bottom: -3rem;
-    //   // right: -12rem;
-    //   // width: 34rem;
-    //   // height: 44rem;
-    //   // background: url("../img/hand1.png") center center/cover no-repeat;
-    //   // transform: rotate(-26deg);
-
-    //   @media (min-width: 1024px) {
-    //     bottom: -62rem;
-    //     right: -26rem;
-    //     width: 98rem;
-    //     height: 106rem;
-    //     background: url("../img/hand1.png") center center/cover no-repeat;  
-    //   }
-    // }
 
     &-left {
       max-width: 60rem;
@@ -75,18 +54,14 @@
       }
 
       @media (min-width: 1200px) {
-        // max-width: 70rem;
         max-width: 60rem;
         align-items: flex-start;
       }
 
-      // @media (min-width: 1440px) {
-      //   max-width: 60rem;
-      // }
-
       h1 {
         margin: 2rem 0 5rem 0;
         text-align: center;
+        @include PTSerifCaption();
         font-size: 3rem;
         font-weight: 700;
         line-height: 1.2;
@@ -105,7 +80,7 @@
         }
 
         @media (min-width: 1440px) {
-          margin-bottom: 7.8rem;
+          margin: 0 0 7.8rem 0;
           font-size: 9.6rem;
           line-height: 10.1rem;
         }
@@ -114,13 +89,12 @@
   }
 
   &__btn {
+    @include RalewayBold();
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 2.1rem;
     text-transform: uppercase;
     color: var(--white-primary);
     padding: 1.5rem 2.5rem;
-    border-radius: 5rem;
     background-color: var(--green-primary);
 
     @media (min-width: 768px) {

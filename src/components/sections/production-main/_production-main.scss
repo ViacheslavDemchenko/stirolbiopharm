@@ -1,5 +1,4 @@
 .production-main {
-  // padding: 3.5rem 0 3.5rem 0;
 
   h1 {
     margin-bottom: 5rem;
@@ -24,11 +23,10 @@
   }
 
   &__inner {
-    // position: relative;
-    // width: 100%;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
+    
+    @media (min-width: 1200px) {
+      align-items: center;
+    }
   }
 
   &__text {
@@ -90,11 +88,6 @@
     position: relative;
     width: 100%;
     max-width: 72.5rem;
-    // height: 23rem;
-
-    // @media (min-width: 1200px) {
-    //   height: 57.1rem;
-    // }
 
     .play {
       position: absolute;
@@ -119,7 +112,6 @@
         top: 50%;
         left: 50%;
         transform: translate(calc(-50% + 1rem), -50%);
-        // transform: translate(calc(-50% + 2rem), -50%);
         border: 1.5rem solid transparent; 
         border-left: 2rem solid var(--white-primary);
 
@@ -131,10 +123,31 @@
        }
     }
 
-    video {
+    .youtube {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
       width: 100%;
-      max-width: 72.5rem;
       height: 100%;
+      border-radius: 1rem;
+      aspect-ratio: 16 / 9;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      will-change: auto;
+      transition: all 0.2s ease-in-out;
+      background-image: url("../img/poster.jpg");
+      cursor: pointer;
+
+      iframe {
+        display: none;
+      }
     }
+
+    // video {
+    //   width: 100%;
+    //   max-width: 72.5rem;
+    //   height: 100%;
+    // }
   }
 }

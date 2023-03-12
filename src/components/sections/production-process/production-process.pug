@@ -1,50 +1,30 @@
-section.production-process
+section.production-process.section.section--honeycombs-right.section--honeycombs-left
   .container
-    div(itemscope itemtype="http://schema.org/BreadcrumbList").breadcrumbs
+    .breadcrumbs
       ul.breadcrumbs__links
-        li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem") 
-          a(itemprop="item" href="index.html")
-            span(itemprop="name") Главная
-          meta(itemprop="position" content="1")
-        li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-          a(itemprop="item" href="production-main.html")
-            span(itemprop="name") Производство
-          meta(itemprop="position" content="2")
-        li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-          a(itemprop="item")
-            span(itemprop="name") Процесс производства
-          meta(itemprop="position" content="3")
+        li
+          a(href="index.html")
+            span Главная
+        li
+          a(href="production-main.html")
+            span Производство
+        li
+          a
+            span Процесс производства
     h1 Процесс производства
     .section.section__inner.production-process__inner 
       .production-process__gallery 
-        div(itemscope itemtype="http://schema.org/ImageObject").gallery__item-main
-          img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="526" height="303" alt="Таблетки")
-          meta(itemprop="description" content="Таблетки")
+        .gallery__item-main
+          img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="526" height="303" alt="Таблетки")
         .gallery__items-small
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
-          div(itemscope itemtype="http://schema.org/ImageObject")
-            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" itemprop="contentUrl" width="336" height="234" alt="Таблетки")
-            meta(itemprop="description" content="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
+            img(src="./wp-content/themes/stirolbiopharm/assets/img/tablets.jpg" width="336" height="234" alt="Таблетки")
       .production-process__text
         .production-process__stages 
           span.stage.stage--active 1
@@ -68,9 +48,9 @@ section.production-process
             | для лабораторного контроля и после получения положительного результата лабораторного анализа смесь может 
             | направляться на следующий этап – таблетирования или капсулирование.
         .production-process__arrows 
-          .arrow__prev
+          .arrow__prev(rel="prev")
             svg(aria-hidden="true")
               use(xlink:href="./wp-content/themes/stirolbiopharm/assets/img/icons/sprite.svg#arrow")
-          .arrow__next
+          .arrow__next(rel="next")
             svg(aria-hidden="true")
               use(xlink:href="./wp-content/themes/stirolbiopharm/assets/img/icons/sprite.svg#arrow")

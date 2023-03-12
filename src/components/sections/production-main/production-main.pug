@@ -1,15 +1,13 @@
-section.production-main
+section.production-main.section.section--honeycombs-right
   .container
-    div(itemscope itemtype="http://schema.org/BreadcrumbList").breadcrumbs
+    .breadcrumbs
       ul.breadcrumbs__links
-        li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem") 
-          a(itemprop="item" href="index.html")
-            span(itemprop="name") Главная
-          meta(itemprop="position" content="1")
-        li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-          a(itemprop="item")
-            span(itemprop="name") Производство
-          meta(itemprop="position" content="2")
+        li
+          a(href="index.html")
+            span Главная
+        li
+          a
+            span Производство
     h1 Производство
     .section.section__inner.production-main__inner 
       .production-main__text 
@@ -23,6 +21,6 @@ section.production-main
         p Высокое качество выпускаемой продукции подтверждено множеством сертификатов качества.
         a(href="quality-control.html").btn.btn--animate Подробнее
       .production-main__video
-        .play
-        video(poster="./wp-content/themes/stirolbiopharm/assets/img/poster.jpg")
-          //- source(src="./wp-content/themes/stirolbiopharm/assets/video/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"') 
+        .youtube
+          .play
+          iframe(width="725" height="408" src="https://www.youtube.com/embed/Z4SGPFHhPC0?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)        

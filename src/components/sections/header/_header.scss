@@ -1,6 +1,10 @@
 .header {
-  position: relative;
+  // position: relative;
+  position: sticky;
+  // top: 0;
+  z-index: 100;
   padding: 2rem 0 0 0;
+  background: transparent;
 
   @media (min-width: 1200px) {
     width: calc(100vw - 1.7rem) !important;
@@ -51,42 +55,35 @@
   }
 
   &__bg {
-    width: 100%;
-    min-height: 60rem;
+    // width: 100%;
+    // min-height: 60rem;
     overflow: hidden;
-    // background: url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
-    background: url("../img/hands-xs.png") right bottom/20.6rem 20.9rem no-repeat, 
-                url("../img/bird.png") -17rem bottom/28rem 20rem no-repeat, 
-                url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
+    // background: url("../img/hands-xs.png") right bottom/20.6rem 20.9rem no-repeat, 
+    //             url("../img/bird.png") -17rem bottom/28rem 20rem no-repeat, 
+    //             url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
     
-    @media (min-width: 500px) {
-      // background: url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
-      background: url("../img/hands-xs.png") right bottom/23.6rem 23.9rem no-repeat, 
-                  url("../img/bird.png") -15rem bottom/31rem 23rem no-repeat, 
-                  url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
-    }
+    // @media (min-width: 500px) {
+    //   background: url("../img/hands-xs.png") right bottom/23.6rem 23.9rem no-repeat, 
+    //               url("../img/bird.png") -15rem bottom/31rem 23rem no-repeat, 
+    //               url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
+    // }
 
-    @media (min-width: 700px) {
-      // background: url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
-      background: url("../img/hands-xs.png") right bottom/28.6rem 27.9rem no-repeat, 
-                  url("../img/bird.png") -15rem bottom/35rem 27rem no-repeat, 
-                  url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
-    }
+    // @media (min-width: 700px) {
+    //   background: url("../img/hands-xs.png") right bottom/28.6rem 27.9rem no-repeat, 
+    //               url("../img/bird.png") -15rem bottom/35rem 27rem no-repeat, 
+    //               url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
+    // }
 
-    @media (min-width: 1024px) {
-      height: 80rem;
-      // background: url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
-      background: url("../img/hands-xs.png") right bottom/33.6rem 31.9rem no-repeat, 
-                  url("../img/bird.png") -15rem bottom/38rem 30rem no-repeat, 
-                  url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
-    }
+    // @media (min-width: 1024px) {
+    //   height: 80rem;
+    //   background: url("../img/hands-xs.png") right bottom/33.6rem 31.9rem no-repeat, 
+    //               url("../img/bird.png") -15rem bottom/38rem 30rem no-repeat, 
+    //               url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
+    // }
 
     @media (min-width: 1200px) {
-      height: 108rem;
-      // background: url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
-      // background: url("../img/hands.png") 53vw bottom/76.6rem 51.9rem no-repeat, 
-      //             url("../img/bird.png") -15rem bottom/54rem 46rem no-repeat, 
-      //             url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
+      height: 100vh;
+      max-height: 108rem;
       background: url("../img/hands.png") 32vw bottom/107.6rem 72.9rem no-repeat, 
                   url("../img/bird.png") -15rem bottom/54rem 46rem no-repeat, 
                   url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
@@ -94,40 +91,23 @@
 
     @media (min-width: 1440px) {
       background: url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
-      // background: url("../img/hands.png") 30vw bottom/128.6rem 85.9rem no-repeat, 
-      //             url("../img/bird.png") -15rem bottom/54rem 46rem no-repeat, 
-      //             url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
     }
 
     @media (min-width: 1600px) {
       background: url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
-      // background: url("../img/hands.png") 38vw bottom/128.6rem 85.9rem no-repeat, 
-      //             // url("../img/bird.png") -15rem bottom/54rem 46rem no-repeat, 
-      //             url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
     }
 
     @media (min-width: 1700px) {
       background: url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
-      // background: url("../img/hands.png") 42vw bottom/128.6rem 85.9rem no-repeat, 
-      //             // url("../img/bird.png") -17rem bottom/54rem 46rem no-repeat, 
-      //             url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
     }
 
     @media (min-width: 1920px) {
       background: url("../img/main-page-bg.jpg") center center/cover no-repeat;
-      // background: url("../img/hands.png") 47vw bottom/128.6rem 85.9rem no-repeat, 
-      //             // url("../img/bird.png") -26rem bottom/54rem 46rem no-repeat, 
-      //             url("../img/main-page-bg.jpg") 70% bottom/cover no-repeat;
     }
-    // will-change: padding;
-    // transition: padding 0.3s ease-in-out;
   }
 
   &__inner {
     width: 100%;
-    // width: 100vw;
-    // background: #fff;
-    // padding-top: 2rem;
   }
 
   &__top,
@@ -139,13 +119,10 @@
 
   &__top {
     height: 100%;
-    // min-height: 60rem;
     display: grid; 
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fit, minmax(1rem, 1fr));
     row-gap: 2rem;
-    // margin-bottom: 3.2rem;
-    // background: var(--white-primary);
 
     @media (min-width: 1200px) {
       grid-template-rows: repeat(auto-fit, minmax(1rem, 1fr));
@@ -192,6 +169,7 @@
       grid-row-end: 3;
       text-align: center;
       margin: 0 auto;
+      @include RalewayBold();
       font-size: 1.6rem;
       font-weight: 600;
       line-height: 1.2;

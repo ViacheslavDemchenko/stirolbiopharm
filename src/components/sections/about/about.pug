@@ -2,11 +2,9 @@ section.about
   .container 
     h2 О нас
     .about__inner
-      div(itemscope itemtype="http://schema.org/ImageObject").about__images
-        img(src="./wp-content/themes/stirolbiopharm/assets/img/about-1.jpg" itemprop="contentUrl" width="656" height="614" alt="")
-        meta(itemprop="description" content="Лекарства")
-        img(src="./wp-content/themes/stirolbiopharm/assets/img/about-2.jpg" itemprop="contentUrl" width="569" height="532" alt="")
-        meta(itemprop="description" content="Лаборатория")
+      .about__images
+        img(src="./wp-content/themes/stirolbiopharm/assets/img/about-1.jpg" width="656" height="614" alt="")
+        img(src="./wp-content/themes/stirolbiopharm/assets/img/about-2.jpg" width="569" height="532" alt="")
       .about__text-wrap
         .about__text
           .about__text-content Завод по производству твердых лекарственных форм «Фармация» введен в эксплуатацию 09.10. 1996 г, 
@@ -14,4 +12,4 @@ section.about
             | наименований: Витамин С 500 мг апельсиновый, таблетки; Кислота ацетилсалициловая 325 мг, таблетки, 
             | Парацетамол 325 мг, таблетки; Парацетамол 325 мг, капсулы и проектной мощностью 5 миллиардов таблеток и 
             | капсул в год.
-        a(itemprop="url" href="#!").btn.btn--animate-reverse.about__text-btn Подробнее
+        a(href="#!").btn.btn--green.btn--animate-reverse.about__text-btn Подробнее

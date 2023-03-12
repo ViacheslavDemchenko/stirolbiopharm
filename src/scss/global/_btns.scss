@@ -1,13 +1,14 @@
 .btn {
   padding: 1rem 2rem;
+  @include RalewayMedium();
   font-size: 1.6rem;
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 1.2;
   color: var(--green-secondary);
-  border: 0.3rem solid #4FD066;
+  border: 0.3rem solid var(--green-secondary);
+  border-radius: 5rem;
   outline: none;
   background: var(--white-primary);
-  border-radius: 5rem;
 
   @media (min-width: 1024px) {
     padding: 1.5rem 2.5rem;
@@ -17,6 +18,11 @@
     padding: 2rem 4rem;
     font-size: 1.8rem;
     line-height: 2.7rem;
+  }
+
+  &--green {
+    color: var(--white-primary);
+    background: var(--green-secondary);
   }
 
   &--animate,
