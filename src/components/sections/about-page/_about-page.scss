@@ -1,26 +1,26 @@
 .about-page {
   
-  h1 {
-    margin-bottom: 5rem;
-    text-align: center;
-    font-size: 2.8rem;
-    font-weight: 700;
-    line-height: 1.2;
-    color: var(--black-primary);
+  // h1 {
+  //   margin-bottom: 5rem;
+  //   text-align: center;
+  //   font-size: 2.8rem;
+  //   font-weight: 700;
+  //   line-height: 1.2;
+  //   color: var(--black-primary);
 
-    @media (min-width: 1024px) {
-      font-size: 4rem;
-    }
+  //   @media (min-width: 1024px) {
+  //     font-size: 4rem;
+  //   }
 
-    @media (min-width: 1200px) {
-      margin-bottom: 5rem;
-      font-size: 5rem;
-    }
+  //   @media (min-width: 1200px) {
+  //     margin-bottom: 5rem;
+  //     font-size: 5rem;
+  //   }
 
-    @media (min-width: 1440px) {
-      font-size: 6rem;
-    }
-  }
+  //   @media (min-width: 1440px) {
+  //     font-size: 6rem;
+  //   }
+  // }
 
   &__inner {
     width: 100%;
@@ -39,12 +39,29 @@
     // display: block;
   }
 
-  &__text {
-    max-width: 72.5rem;
+  &__history-text {
+    display: none;
+    opacity: 0;
+    will-change: display;
+    transition: display 0.5s ease-in-out;
 
-    @media (min-width: 1024px) {
-      max-width: 53.5rem;
+    &--display {
+      display: block;
     }
+
+    &--opacity {
+      opacity: 1;
+      transform: translateX(0);
+      animation: textAnimate 0.3s linear;
+    }
+  }
+
+  &__text {
+    // max-width: 72.5rem;
+
+    // @media (min-width: 1024px) {
+    //   max-width: 53.5rem;
+    // }
   }
 
   &__text,
@@ -168,7 +185,7 @@
       margin-bottom: 5.4rem;
     }
 
-    span {
+    .year {
       display: inline-block;
       padding: 0.845rem 1.723rem;
       margin: 1rem;
@@ -192,6 +209,11 @@
       @media (min-width: 1200px) {
         padding: 0.845rem 2.723rem;
         margin: 0 2rem 2rem 0;
+      }
+
+      &--active {
+        color: var(--white-primary);
+        background: var(--green-secondary);
       }
     }
   }

@@ -358,6 +358,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_catalog__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/catalog */ "./src/js/modules/catalog.js");
 /* harmony import */ var _modules_pills__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/pills */ "./src/js/modules/pills.js");
 /* harmony import */ var _modules_video__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/video */ "./src/js/modules/video.js");
+/* harmony import */ var _modules_production_process__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/production-process */ "./src/js/modules/production-process.js");
+/* harmony import */ var _modules_history_years__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/history-years */ "./src/js/modules/history-years.js");
 __webpack_require__(/*! polyfill-nodelist-foreach */ "./node_modules/polyfill-nodelist-foreach/index.js"); // Полифил для поддержки метода forEach в IE11+ и Safari9
 __webpack_require__(/*! svgxuse */ "./node_modules/svgxuse/svgxuse.js"); // Полифил для поддержки IE11+ и старыми браузерами использования SVG через use 
 
@@ -368,7 +370,9 @@ __webpack_require__(/*! svgxuse */ "./node_modules/svgxuse/svgxuse.js"); // По
  // Слайдер граммот логотипов лабораторий страница Производство
  // Меню каталога (открытие)
  // Левитирующие таблетки
-
+ // Манипуляции с запуском видео
+ // Текстовый слайдер старницы Процесс производства
+ // Текстовый слайдер на странице О компании
 
 // import accordion from './modules/accordion.js'; // Аккордион
 
@@ -382,6 +386,8 @@ Object(_modules_map_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
 Object(_modules_catalog__WEBPACK_IMPORTED_MODULE_5__["default"])();
 Object(_modules_pills__WEBPACK_IMPORTED_MODULE_6__["default"])();
 Object(_modules_video__WEBPACK_IMPORTED_MODULE_7__["default"])();
+Object(_modules_production_process__WEBPACK_IMPORTED_MODULE_8__["default"])();
+Object(_modules_history_years__WEBPACK_IMPORTED_MODULE_9__["default"])();
 // accordion();
 
 // modal();
@@ -4794,6 +4800,43 @@ function catalog() {
 
 /***/ }),
 
+/***/ "./src/js/modules/history-years.js":
+/*!*****************************************!*\
+  !*** ./src/js/modules/history-years.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return historyYears; });
+function historyYears() {
+  if (document.querySelectorAll('.about-page__history-text').length > 0) {
+    var texts = document.querySelectorAll('.about-page__history-text');
+    var years = document.querySelectorAll('.about-page__years span');
+    var activeYear = 0;
+    years.forEach(function (year, i) {
+      year.addEventListener('click', function (e) {
+        activeYear = i;
+        years.forEach(function (year) {
+          year.classList.remove('year--active');
+        });
+        texts.forEach(function (text) {
+          text.classList.remove('about-page__history-text--display');
+          text.classList.remove('about-page__history-text--opacity');
+        });
+        texts[i].classList.add('about-page__history-text--display');
+        setTimeout(function () {
+          texts[i].classList.add('about-page__history-text--opacity');
+          years[activeYear].classList.add('year--active');
+        }, 500);
+      });
+    });
+  }
+}
+
+/***/ }),
+
 /***/ "./src/js/modules/laboratories.js":
 /*!****************************************!*\
   !*** ./src/js/modules/laboratories.js ***!
@@ -4954,6 +4997,62 @@ function pills() {
       });
     }
     showPills();
+  }
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/production-process.js":
+/*!**********************************************!*\
+  !*** ./src/js/modules/production-process.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return productionProcess; });
+function productionProcess() {
+  if (document.querySelectorAll('.production-process__text-content').length > 0) {
+    var texts = document.querySelectorAll('.production-process__text-content');
+    var stages = document.querySelectorAll('.stage');
+    var next = document.querySelector('.production-process__arrows .arrow__next');
+    var prev = document.querySelector('.production-process__arrows .arrow__prev');
+    var activeText = 0;
+    next.addEventListener('click', function () {
+      if (activeText < 3) {
+        activeText += 1;
+        texts.forEach(function (text) {
+          text.classList.remove('production-process__text-content--display');
+          text.classList.remove('production-process__text-content--opacity');
+        });
+        stages.forEach(function (stage) {
+          stage.classList.remove('stage--active');
+        });
+        texts[activeText].classList.add('production-process__text-content--display');
+        setTimeout(function () {
+          texts[activeText].classList.add('production-process__text-content--opacity');
+          stages[activeText].classList.add('stage--active');
+        }, 500);
+      }
+    });
+    prev.addEventListener('click', function () {
+      if (activeText > 0) {
+        activeText -= 1;
+        texts.forEach(function (text) {
+          text.classList.remove('production-process__text-content--display');
+          text.classList.remove('production-process__text-content--opacity');
+        });
+        stages.forEach(function (stage) {
+          stage.classList.remove('stage--active');
+        });
+        texts[activeText].classList.add('production-process__text-content--display');
+        setTimeout(function () {
+          texts[activeText].classList.add('production-process__text-content--opacity');
+          stages[activeText].classList.add('stage--active');
+        }, 500);
+      }
+    });
   }
 }
 

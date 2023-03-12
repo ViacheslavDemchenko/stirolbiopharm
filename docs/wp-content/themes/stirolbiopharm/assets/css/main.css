@@ -145,6 +145,15 @@ footer {
   overflow: hidden;
 }
 
+h1 {
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--black-primary);
+}
+
 h2 {
   margin-bottom: 3rem;
   font-family: "PT Serif Caption";
@@ -2324,11 +2333,6 @@ input::placeholder {
 
 .medicine h1 {
   margin-bottom: 10rem;
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--black-primary);
 }
 
 .medicine__inner {
@@ -2514,11 +2518,6 @@ input::placeholder {
 
 .bads h1 {
   margin-bottom: 10rem;
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--black-primary);
 }
 
 .bads__inner {
@@ -2708,15 +2707,6 @@ input::placeholder {
   padding: 3.5rem 0;
 }
 
-.contacts-info h1 {
-  margin-bottom: 5rem;
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 400;
-  line-height: 1.2;
-  color: var(--black-primary);
-}
-
 .contacts-info__block-titles {
   width: 100%;
   display: flex;
@@ -2804,15 +2794,6 @@ input::placeholder {
   margin-top: 1.3rem;
   font-weight: 600;
   color: var(--green-secondary);
-}
-
-.production-main h1 {
-  margin-bottom: 5rem;
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--black-primary);
 }
 
 .production-main__text {
@@ -2997,15 +2978,6 @@ input::placeholder {
   background: var(--green-secondary);
 }
 
-.production-structure h1 {
-  margin-bottom: 5rem;
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--black-primary);
-}
-
 .production-structure__text {
   margin-bottom: 3.2rem;
 }
@@ -3034,15 +3006,6 @@ input::placeholder {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem 2rem;
-}
-
-.quality-control h1 {
-  margin-bottom: 5rem;
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--black-primary);
 }
 
 .quality-control__text h3 {
@@ -3077,15 +3040,6 @@ input::placeholder {
 .quality-control__text ul li:nth-of-type(odd) {
   border-radius: 1rem;
   background: rgba(128, 211, 244, 0.08);
-}
-
-.certification h1 {
-  margin-bottom: 5rem;
-  text-align: center;
-  font-size: 3.4rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--black-primary);
 }
 
 .certification__text p {
@@ -3160,13 +3114,8 @@ input::placeholder {
   border-radius: 1rem;
 }
 
-.production-process h1 {
-  margin-bottom: 5rem;
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--black-primary);
+.production-process__inner {
+  align-items: stretch;
 }
 
 .production-process__gallery {
@@ -3176,6 +3125,40 @@ input::placeholder {
   gap: 2rem 2rem;
   justify-items: center;
   margin-bottom: 3rem;
+}
+
+.production-process__text-contents {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.production-process__text-content {
+  display: none;
+  opacity: 0;
+  will-change: display;
+  transition: display 0.5s ease-in-out;
+}
+
+.production-process__text-content p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--black-secondary);
+}
+
+.production-process__text-content p:not(:last-of-type) {
+  margin-bottom: 2.95rem;
+}
+
+.production-process__text-content--display {
+  display: block;
+}
+
+.production-process__text-content--opacity {
+  opacity: 1;
+  transform: translateX(0);
+  animation: textAnimate 0.3s linear;
 }
 
 .production-process__text {
@@ -3222,21 +3205,6 @@ input::placeholder {
   background: var(--green-secondary);
 }
 
-.production-process__text .text-content {
-  margin-bottom: 4rem;
-}
-
-.production-process__text .text-content p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.2;
-  color: var(--black-secondary);
-}
-
-.production-process__text .text-content p:not(:last-of-type) {
-  margin-bottom: 2.95rem;
-}
-
 .production-process__arrows {
   display: flex;
 }
@@ -3277,19 +3245,7 @@ input::placeholder {
   fill: var(--white-primary);
 }
 
-.production-process__arrows .arrow__next {
-  background: var(--green-secondary);
-}
-
 .production-process__arrows .arrow__next svg {
-  fill: var(--white-primary);
-}
-
-.production-process__arrows .arrow__next--last {
-  background: var(--white-primary);
-}
-
-.production-process__arrows .arrow__next--last svg {
   fill: var(--green-secondary);
 }
 
@@ -3300,14 +3256,6 @@ input::placeholder {
 
 .production-process__arrows .arrow__prev svg {
   transform: rotate(180deg);
-  fill: var(--green-secondary);
-}
-
-.production-process__arrows .arrow__prev--last {
-  background: var(--white-primary);
-}
-
-.production-process__arrows .arrow__prev--last svg {
   fill: var(--green-secondary);
 }
 
@@ -3327,13 +3275,14 @@ input::placeholder {
   gap: 2rem 2rem;
 }
 
-.about-page h1 {
-  margin-bottom: 5rem;
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--black-primary);
+@keyframes textAnimate {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .about-page__inner {
@@ -3347,8 +3296,21 @@ input::placeholder {
   width: 100%;
 }
 
-.about-page__text {
-  max-width: 72.5rem;
+.about-page__history-text {
+  display: none;
+  opacity: 0;
+  will-change: display;
+  transition: display 0.5s ease-in-out;
+}
+
+.about-page__history-text--display {
+  display: block;
+}
+
+.about-page__history-text--opacity {
+  opacity: 1;
+  transform: translateX(0);
+  animation: textAnimate 0.3s linear;
 }
 
 .about-page__text,
@@ -3429,7 +3391,7 @@ input::placeholder {
   margin-bottom: 2rem;
 }
 
-.about-page__years span {
+.about-page__years .year {
   display: inline-block;
   padding: 0.845rem 1.723rem;
   margin: 1rem;
@@ -3445,8 +3407,13 @@ input::placeholder {
   cursor: pointer;
 }
 
-.about-page__years span:hover,
-.about-page__years span:focus {
+.about-page__years .year:hover,
+.about-page__years .year:focus {
+  color: var(--white-primary);
+  background: var(--green-secondary);
+}
+
+.about-page__years .year--active {
   color: var(--white-primary);
   background: var(--green-secondary);
 }
@@ -3678,6 +3645,10 @@ input::placeholder {
     padding-right: 1.7rem;
   }
 
+  h1 {
+    font-size: 4rem;
+  }
+
   .btn {
     padding: 1.5rem 2.5rem;
   }
@@ -3887,17 +3858,9 @@ input::placeholder {
     fill: var(--white-primary);
   }
 
-  .medicine h1 {
-    font-size: 4rem;
-  }
-
   .medicine__products-cards {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem 7rem;
-  }
-
-  .bads h1 {
-    font-size: 4rem;
   }
 
   .bads__products-cards {
@@ -3909,16 +3872,8 @@ input::placeholder {
     padding: 3.5rem 0 4rem 0;
   }
 
-  .contacts-info h1 {
-    font-size: 4rem;
-  }
-
   .contacts-info__block-titles h3 {
     align-self: flex-start;
-  }
-
-  .production-main h1 {
-    font-size: 4rem;
   }
 
   .production-direction__item:nth-of-type(3) {
@@ -3931,21 +3886,9 @@ input::placeholder {
     font-size: 2.2rem;
   }
 
-  .production-structure h1 {
-    font-size: 4rem;
-  }
-
   .production-structure__gallery {
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem 2rem;
-  }
-
-  .quality-control h1 {
-    font-size: 4rem;
-  }
-
-  .certification h1 {
-    font-size: 4rem;
   }
 
   .certification__block {
@@ -3980,20 +3923,8 @@ input::placeholder {
     margin-bottom: 0;
   }
 
-  .production-process h1 {
-    font-size: 4rem;
-  }
-
   .production-process__gallery {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .about-page h1 {
-    font-size: 4rem;
-  }
-
-  .about-page__text {
-    max-width: 53.5rem;
   }
 
   .about-page__text,
@@ -4013,6 +3944,11 @@ input::placeholder {
 }
 
 @media (min-width: 1200px) {
+  h1 {
+    margin-bottom: 5rem;
+    font-size: 5rem;
+  }
+
   .section__inner {
     flex-direction: row;
     justify-content: space-between;
@@ -4220,7 +4156,6 @@ input::placeholder {
 
   .medicine h1 {
     margin-bottom: 5rem;
-    font-size: 5rem;
   }
 
   .medicine__menu {
@@ -4250,7 +4185,6 @@ input::placeholder {
 
   .bads h1 {
     margin-bottom: 5rem;
-    font-size: 5rem;
   }
 
   .bads__menu {
@@ -4276,16 +4210,6 @@ input::placeholder {
 
   .bads__products-cards {
     gap: 3rem 14rem;
-  }
-
-  .contacts-info h1 {
-    margin-bottom: 5rem;
-    font-size: 5rem;
-  }
-
-  .production-main h1 {
-    margin-bottom: 5rem;
-    font-size: 5rem;
   }
 
   .production-main__inner {
@@ -4344,11 +4268,6 @@ input::placeholder {
     height: 3rem;
   }
 
-  .production-structure h1 {
-    margin-bottom: 5rem;
-    font-size: 5rem;
-  }
-
   .production-structure__text {
     margin-bottom: 8rem;
   }
@@ -4365,11 +4284,6 @@ input::placeholder {
   .production-structure__gallery {
     grid-template-columns: repeat(4, 1fr);
     gap: 3.4rem 2.1rem;
-  }
-
-  .quality-control h1 {
-    margin-bottom: 5rem;
-    font-size: 5rem;
   }
 
   .quality-control__text h3 {
@@ -4389,11 +4303,6 @@ input::placeholder {
   .quality-control__text ul li {
     padding: 3.2rem 2.4rem;
     font-size: 1.8rem;
-  }
-
-  .certification h1 {
-    margin-bottom: 5rem;
-    font-size: 5rem;
   }
 
   .certification__text p {
@@ -4437,11 +4346,6 @@ input::placeholder {
     height: 30.5rem;
   }
 
-  .production-process h1 {
-    margin-bottom: 5rem;
-    font-size: 5rem;
-  }
-
   .production-process__inner {
     grid-template-columns: 1fr 1fr;
     column-gap: 6.4rem;
@@ -4451,6 +4355,14 @@ input::placeholder {
     max-width: 52.6rem;
     grid-template-columns: 1fr;
     margin-bottom: 0;
+  }
+
+  .production-process__text-content p {
+    font-size: 1.8rem;
+  }
+
+  .production-process__text-content p:not(:last-of-type) {
+    margin-bottom: 4rem;
   }
 
   .production-process__text {
@@ -4473,25 +4385,12 @@ input::placeholder {
     width: 5.4rem;
   }
 
-  .production-process__text .text-content p {
-    font-size: 1.8rem;
-  }
-
-  .production-process__text .text-content p:not(:last-of-type) {
-    margin-bottom: 4rem;
-  }
-
   .production-process .gallery__item-main {
     margin-bottom: 3.1rem;
   }
 
   .production-process .gallery__items-small {
     gap: 3.1rem 1.1rem;
-  }
-
-  .about-page h1 {
-    margin-bottom: 5rem;
-    font-size: 5rem;
   }
 
   .about-page__inner {
@@ -4531,7 +4430,7 @@ input::placeholder {
     margin-bottom: 5.4rem;
   }
 
-  .about-page__years span {
+  .about-page__years .year {
     padding: 0.845rem 2.723rem;
     margin: 0 2rem 2rem 0;
   }
@@ -4565,6 +4464,10 @@ input::placeholder {
     width: 109.1rem;
     height: 76.5rem;
     background: url("../img/hands-2.png") right bottom/cover no-repeat;
+  }
+
+  h1 {
+    font-size: 6rem;
   }
 
   h2 {
@@ -4748,11 +4651,6 @@ input::placeholder {
     right: 7rem;
   }
 
-  .medicine h1 {
-    text-align: left;
-    font-size: 6rem;
-  }
-
   .medicine__products-alphabet li:not(:last-of-type) {
     margin-right: 1rem;
   }
@@ -4765,11 +4663,6 @@ input::placeholder {
     grid-template-columns: repeat(auto-fill, 30.5rem);
     grid-template-rows: repeat(auto-fill, 32.2rem);
     gap: 4.4rem 9.5rem;
-  }
-
-  .bads h1 {
-    text-align: left;
-    font-size: 6rem;
   }
 
   .bads__products-alphabet a {
@@ -4790,11 +4683,6 @@ input::placeholder {
     padding: 3.5rem 0 7.1rem 0;
   }
 
-  .contacts-info h1 {
-    text-align: left;
-    font-size: 6rem;
-  }
-
   .contacts-info__block-titles h3 {
     width: 25%;
     margin-bottom: 3.7rem;
@@ -4812,10 +4700,6 @@ input::placeholder {
 
   .contacts-info__block:nth-of-type(2) p:nth-of-type(2) {
     font-size: 1.8rem;
-  }
-
-  .production-main h1 {
-    font-size: 6rem;
   }
 
   .production-main__text {
@@ -4839,20 +4723,8 @@ input::placeholder {
     font-size: 2.4rem;
   }
 
-  .production-structure h1 {
-    font-size: 6rem;
-  }
-
   .production-structure__text {
     margin-bottom: 12.2rem;
-  }
-
-  .quality-control h1 {
-    font-size: 6rem;
-  }
-
-  .certification h1 {
-    font-size: 6rem;
   }
 
   .certification__block-text {
@@ -4865,16 +4737,8 @@ input::placeholder {
     padding: 3.3rem 5.7rem;
   }
 
-  .production-process h1 {
-    font-size: 6rem;
-  }
-
   .production-process .gallery__item-main {
     width: 52.6rem;
-  }
-
-  .about-page h1 {
-    font-size: 6rem;
   }
 
   .about-page__text,
